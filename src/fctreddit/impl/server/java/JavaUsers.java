@@ -10,16 +10,17 @@ import fctreddit.api.java.Result.ErrorCode;
 import fctreddit.impl.server.java.JavaUsers;
 import fctreddit.impl.server.persistance.Hibernate;
 
+
 public class JavaUsers implements Users {
 
-	private static Logger Log = Logger.getLogger(JavaUsers.class.getName());
+	private static final Logger Log = Logger.getLogger(JavaUsers.class.getName());
 
-	private Hibernate hibernate;
-	
+	private final Hibernate hibernate;
+
 	public JavaUsers() {
 		hibernate = Hibernate.getInstance();
 	}
-	
+
 	@Override
 	public Result<String> createUser(User user) {
 		Log.info("createUser : " + user);
@@ -34,11 +35,11 @@ public class JavaUsers implements Users {
 		try {
 			hibernate.persist(user);
 		} catch (Exception e) {
-			e.printStackTrace(); //Most likely the exception is due to the user already existing...
+			e.printStackTrace(); // Most likely the exception is due to the user already existing...
 			Log.info("User already exists.");
 			return Result.error(ErrorCode.CONFLICT);
 		}
-		
+
 		return Result.ok(user.getUserId());
 	}
 
@@ -51,7 +52,7 @@ public class JavaUsers implements Users {
 			Log.info("UserId or password null.");
 			return Result.error(ErrorCode.BAD_REQUEST);
 		}
-		
+
 		User user = null;
 		try {
 			user = hibernate.get(User.class, userId);
@@ -71,28 +72,71 @@ public class JavaUsers implements Users {
 			Log.info("Password is incorrect");
 			return Result.error(ErrorCode.FORBIDDEN);
 		}
-		
+
 		return Result.ok(user);
 
 	}
 
-
 	@Override
 	public Result<User> updateUser(String userId, String password, User user) {
-		// TODO Auto-generated method stub
-		return null;
+		Log.info("updateUser : user = " + userId + "; pwd = " + password + "; user = " + user);
+
+		User existingUser = this.getUser(userId, password).value();
+		
+
+		try {
+			if (user.getFullName() != null) {
+
+				existingUser.setFullName(user.getFullName());
+			}
+			if (user.getEmail() != null) {
+				existingUser.setEmail(user.getEmail());
+			}
+			if (user.getPassword() != null) {
+				existingUser.setPassword(user.getPassword());
+			}
+
+			if (user.getAvatarUrl() != null) {
+				existingUser.setAvatarUrl(user.getAvatarUrl());
+			}
+
+			hibernate.update(existingUser);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.error(ErrorCode.INTERNAL_ERROR);
+		}
+
+		return Result.ok(existingUser);
 	}
 
 	@Override
 	public Result<User> deleteUser(String userId, String password) {
-		// TODO Auto-generated method stub
-		return null;
+		Log.info("deleteUser : user = " + userId + "; pwd = " + password);
+		User existingUser = this.getUser(userId, password).value();
+		
+		try {
+			hibernate.delete(existingUser);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.error(ErrorCode.INTERNAL_ERROR);
+		}
+		return Result.ok(existingUser);
 	}
 
 	@Override
 	public Result<List<User>> searchUsers(String pattern) {
-		// TODO Auto-generated method stub
-		return null;
+		Log.info("searchUsers : pattern = " + pattern);
+
+		try {
+			List<User> list = hibernate.jpql("SELECT u FROM User u WHERE u.userId LIKE '%" + pattern + "%'",
+					User.class);
+			return Result.ok(list);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.error(ErrorCode.INTERNAL_ERROR);
+		}
 	}
+	
+
 
 }

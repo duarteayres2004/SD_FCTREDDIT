@@ -13,10 +13,10 @@ import jakarta.ws.rs.core.MediaType;
 @Path(RestImage.PATH)
 public interface RestImage {
 
-	public static final String PATH = "/image";
-	public static final String IMAGE_ID = "id";
-	public static final String USER_ID = "user";
-	public static final String PASSWORD = "pwd";
+	String PATH = "/image";
+	String IMAGE_ID = "id";
+	String USER_ID = "user";
+	String PASSWORD = "pwd";
 	/**
 	 * Create an image
 	 * 

@@ -17,22 +17,22 @@ import jakarta.ws.rs.core.MediaType;
 @Path(RestContent.PATH)
 public interface RestContent {
 
-	public static final String PATH = "/posts";
-	public static final String PASSWORD = "pwd";
-	public static final String POSTID = "postId";
-	public static final String TIMESTAMP = "timestamp";
-	public static final String REPLIES = "replies";
-	public static final String UPVOTE = "upvote";
-	public static final String DOWNVOTE = "downvote";
-	public static final String USERID = "userId";
-	public static final String SORTBY = "sortBy";
-	public static final String TIMEOUT = "timeout";
+	String PATH = "/posts";
+	String PASSWORD = "pwd";
+	String POSTID = "postId";
+	String TIMESTAMP = "timestamp";
+	String REPLIES = "replies";
+	String UPVOTE = "upvote";
+	String DOWNVOTE = "downvote";
+	String USERID = "userId";
+	String SORTBY = "sortBy";
+	String TIMEOUT = "timeout";
 	
 	/**
 	 * The following constants are the values that can be sent for the query parameter SORTBY
 	 **/
-	public static final String MOST_UP_VOTES = "votes";
-	public static final String MOST_REPLIES = "replies";
+    String MOST_UP_VOTES = "votes";
+	String MOST_REPLIES = "replies";
 	
 	
 	/**
@@ -51,7 +51,7 @@ public interface RestContent {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public String createPost(Post post, @QueryParam(PASSWORD) String userPassword);
+    String createPost(Post post, @QueryParam(PASSWORD) String userPassword);
 	
 	/**
 	 * Retrieves a list with all top-level Posts unique identifiers (i.e., Posts that have no parent Post).
@@ -70,7 +70,7 @@ public interface RestContent {
 	 */
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<String> getPosts(@QueryParam(TIMESTAMP) long timestamp, @QueryParam(SORTBY) String sortOrder);
+    List<String> getPosts(@QueryParam(TIMESTAMP) long timestamp, @QueryParam(SORTBY) String sortOrder);
 	
 	/**
 	 * Retrieves a given post.
@@ -82,7 +82,7 @@ public interface RestContent {
 	@GET
 	@Path("{" + POSTID + "}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Post getPost(@PathParam(POSTID) String postId);
+    Post getPost(@PathParam(POSTID) String postId);
 	
 	/**
 	 * Retrieves a list with all unique identifiers of posts that have the post
@@ -100,7 +100,7 @@ public interface RestContent {
 	@GET
 	@Path("{" + POSTID + "}/" + REPLIES)
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<String> getPostAnswers(@PathParam(POSTID) String postId, @QueryParam(TIMEOUT) long timeout);
+    List<String> getPostAnswers(@PathParam(POSTID) String postId, @QueryParam(TIMEOUT) long timeout);
 	
 	/**
 	 * Updates the contents of a post restricted to the fields:
@@ -119,7 +119,7 @@ public interface RestContent {
 	@Path("{" + POSTID + "}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Post updatePost(@PathParam(POSTID) String postId, @QueryParam(PASSWORD) String userPassword, Post post);
+    Post updatePost(@PathParam(POSTID) String postId, @QueryParam(PASSWORD) String userPassword, Post post);
 	
 	/**
 	 * Deletes a given Post, only the author of the Post can do this operation. A successful delete will also remove
@@ -133,7 +133,7 @@ public interface RestContent {
 	 */	
 	@DELETE
 	@Path("{" + POSTID + "}")
-	public void deletePost(@PathParam(POSTID) String postId, @QueryParam(PASSWORD) String userPassword);
+    void deletePost(@PathParam(POSTID) String postId, @QueryParam(PASSWORD) String userPassword);
 	
 	/**
 	 * Adds an upvote to a given post made by a specific user (might be different from the author
@@ -151,7 +151,7 @@ public interface RestContent {
 	 */
 	@POST
 	@Path("{" + POSTID + "}/" + UPVOTE + "/{" + USERID + "}" )
-	public void upVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
+    void upVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
 	
 	/**
 	 * Removes a previously added upvote to a given post made by a specific user (might be different from the author
@@ -167,7 +167,7 @@ public interface RestContent {
 	 */
 	@DELETE
 	@Path("{" + POSTID + "}/" + UPVOTE + "/{" + USERID + "}" )
-	public void removeUpVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
+    void removeUpVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
 	
 	/**
 	 * Adds an downvote to a given post made by a specific user (might be different from the author
@@ -185,7 +185,7 @@ public interface RestContent {
 	 */
 	@POST
 	@Path("{" + POSTID + "}/" + DOWNVOTE + "/{" + USERID + "}" )
-	public void downVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
+    void downVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
 	
 	/**
 	 * Removes a previously added downvote to a given post made by a specific user (might be different from the author
@@ -201,7 +201,7 @@ public interface RestContent {
 	 */
 	@DELETE
 	@Path("{" + POSTID + "}/" + DOWNVOTE + "/{" + USERID + "}" )
-	public void removeDownVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
+    void removeDownVotePost(@PathParam(POSTID) String postId, @PathParam(USERID) String userId, @QueryParam(PASSWORD) String userPassword);
 	
 	/**
 	 * Exposes the number of upvotes currently associated with a given post
@@ -212,7 +212,7 @@ public interface RestContent {
 	@GET
 	@Path("{" + POSTID + "}/" + UPVOTE)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Integer getupVotes(@PathParam(POSTID) String postId);
+    Integer getupVotes(@PathParam(POSTID) String postId);
 	
 	/**
 	 * Exposes the number of downvotes currently associated with a given post
@@ -223,6 +223,6 @@ public interface RestContent {
 	@GET
 	@Path("{" + POSTID + "}/" + DOWNVOTE)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Integer getDownVotes(@PathParam(POSTID) String postId);
+    Integer getDownVotes(@PathParam(POSTID) String postId);
 
 }
