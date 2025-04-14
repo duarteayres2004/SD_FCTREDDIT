@@ -9,6 +9,7 @@ import fctreddit.api.java.Users;
 import fctreddit.api.java.Result.ErrorCode;
 import fctreddit.impl.server.java.JavaUsers;
 import fctreddit.impl.server.persistance.Hibernate;
+import jakarta.transaction.Transaction;
 
 
 public class JavaUsers implements Users {
@@ -32,7 +33,10 @@ public class JavaUsers implements Users {
 			return Result.error(ErrorCode.BAD_REQUEST);
 		}
 
+
+		//Iniciar uma transação para poder verificar os restantes erros
 		try {
+
 			hibernate.persist(user);
 		} catch (Exception e) {
 			e.printStackTrace(); // Most likely the exception is due to the user already existing...
