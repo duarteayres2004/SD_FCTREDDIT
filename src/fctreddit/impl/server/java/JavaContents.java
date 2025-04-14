@@ -74,12 +74,9 @@ public class JavaContents implements Content {
 
         try {
 
-            Result<User> u = uClient.getUser(post.getAuthorId(), userPassword);
-
-            if (u.error().equals(Result.ErrorCode.NOT_FOUND)) {
-                return Result.error(Result.ErrorCode.NOT_FOUND);
-            } else if (u.error().equals(Result.ErrorCode.FORBIDDEN)) {
-                return Result.error(Result.ErrorCode.FORBIDDEN);
+            Result<User> u = this.getUser(post.getAuthorId(), userPassword);
+            if (!u.isOK()) {
+                return Result.error(u.error());
             }
 
             post.setPostId(UUID.randomUUID().toString());
@@ -147,42 +144,82 @@ public class JavaContents implements Content {
     @Override
     public Result<List<String>> getPostAnswers(String postId, long maxTimeout) {
         Log.info("Get Answers to post: " + postId);
-
-        try {
-
-        }
+        //TODO
+        return null;
     }
 
     @Override
     public Result<Post> updatePost(String postId, String userPassword, Post post) {
-
-        Post post = this.getPost(postId);
+        Log.info("Update post: " + postId);
 
         try {
-            Result<User> u = uClient.getUser(post.getAuthorId(), userPassword);
+            Result<User> u = this.getUser(post.getAuthorId(), userPassword);
 
-            if (u.error().equals(Result.ErrorCode.NOT_FOUND)) {
-                return Result.error(Result.ErrorCode.NOT_FOUND);
-            } else if (u.error().equals(Result.ErrorCode.FORBIDDEN)) {
-                return Result.error(Result.ErrorCode.FORBIDDEN);
+            if (!u.isOK()) {
+                return Result.error(u.error());
             }
 
+            Post resultPost = hibernate.get(Post.class, postId);
+            if (resultPost == null) {
+                return Result.error(Result.ErrorCode.NOT_FOUND);
+            }
 
+            resultPost.setContent(post.getContent());
+            resultPost.setMediaUrl(post.getMediaUrl());
 
+            hibernate.update(resultPost);
+
+            return Result.ok(resultPost);
         } catch (Exception e) {
             e.printStackTrace();
-            return Result.error();
+            return Result.error(Result.ErrorCode.BAD_REQUEST);
         }
     }
 
     @Override
     public Result<Void> deletePost(String postId, String userPassword) {
-        return null;
+        Log.info("deletePost : " + postId);
+
+        try {
+            Post post = hibernate.get(Post.class, postId);
+            if (post == null) {
+                return Result.error(Result.ErrorCode.NOT_FOUND);
+            }
+
+            Result<User> u = this.getUser(post.getAuthorId(), userPassword);
+            if (!u.isOK()) {
+                return Result.error(u.error());
+            }
+
+            //TODO : Descrição contraditoria
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error(Result.ErrorCode.BAD_REQUEST);
+        }
     }
 
     @Override
     public Result<Void> upVotePost(String postId, String userId, String userPassword) {
-        return null;
+        Log.info("upVotePost : " + postId);
+
+        try {
+            Post post = hibernate.get(Post.class, postId);
+            if (post == null) {
+                return Result.error(Result.ErrorCode.NOT_FOUND);
+            }
+
+            Result<User> u = this.getUser(userId, userPassword);
+            if (!u.isOK()) {
+                return Result.error(u.error());
+            }
+
+            //TODO : Como saber se o user ja deu upvote ou downvote?
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error(Result.ErrorCode.BAD_REQUEST);
+        }
     }
 
     @Override
@@ -202,12 +239,49 @@ public class JavaContents implements Content {
 
     @Override
     public Result<Integer> getupVotes(String postId) {
-        return null;
+        Log.info("getUpVotes : " + postId);
+
+        try {
+            Post post = hibernate.get(Post.class, postId);
+            if (post == null) {
+                return Result.error(Result.ErrorCode.NOT_FOUND);
+            }
+
+            return Result.ok(post.getUpVote());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error(Result.ErrorCode.BAD_REQUEST);
+        }
     }
 
     @Override
     public Result<Integer> getDownVotes(String postId) {
-        return null;
+        Log.info("getDownVotes : " + postId);
+
+        try {
+            Post post = hibernate.get(Post.class, postId);
+            if (post == null) {
+                return Result.error(Result.ErrorCode.NOT_FOUND);
+            }
+
+            return Result.ok(post.getDownVote());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error(Result.ErrorCode.BAD_REQUEST);
+        }
+    }
+
+    private Result<User> getUser(String userId, String pwd) {
+        Result<User> u = uClient.getUser(userId, pwd);
+
+        if (u.error().equals(Result.ErrorCode.NOT_FOUND)) {
+            return Result.error(Result.ErrorCode.NOT_FOUND);
+        } else if (u.error().equals(Result.ErrorCode.FORBIDDEN)) {
+            return Result.error(Result.ErrorCode.FORBIDDEN);
+        }
+        return u;
     }
 
 
