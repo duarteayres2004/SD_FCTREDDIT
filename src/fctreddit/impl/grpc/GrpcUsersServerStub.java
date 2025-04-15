@@ -34,11 +34,11 @@ public class GrpcUsersServerStub implements UsersGrpc.AsyncService, BindableServ
 
 	@Override
     public void createUser(CreateUserArgs request, StreamObserver<CreateUserResult> responseObserver) {
-    	Result<String> res = impl.createUser( DataModelAdaptor.GrpcUser_to_User(request.getUser()));	
-    	if( ! res.isOK() ) 
+    	Result<String> res = impl.createUser( DataModelAdaptor.GrpcUser_to_User(request.getUser()));
+    	if( ! res.isOK() )
     		responseObserver.onError(errorCodeToStatus(res.error()));
     	else {
-			responseObserver.onNext( CreateUserResult.newBuilder().setUserId( res.value() ).build());
+			responseObserver.onNext(CreateUserResult.newBuilder().setUserId( res.value() ).build());
 			responseObserver.onCompleted();
     	}
     }
@@ -82,7 +82,7 @@ public class GrpcUsersServerStub implements UsersGrpc.AsyncService, BindableServ
 	@Override
     public void searchUsers(SearchUserArgs request, StreamObserver<GrpcUser> responseObserver) {
 		Result<List<User>> res = impl.searchUsers(request.getPattern());
-		
+
 		if( ! res.isOK() )
 			responseObserver.onError(errorCodeToStatus(res.error()));
 		else {

@@ -3,10 +3,8 @@ package fctreddit.impl.rest;
 import fctreddit.api.Post;
 import fctreddit.api.java.Content;
 import fctreddit.api.java.Result;
-import fctreddit.api.java.Users;
 import fctreddit.api.rest.RestContent;
-import fctreddit.impl.server.java.JavaContents;
-import fctreddit.impl.server.java.JavaUsers;
+import fctreddit.impl.java.JavaContents;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.Response;
 

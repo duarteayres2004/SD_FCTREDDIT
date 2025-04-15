@@ -7,8 +7,7 @@ import fctreddit.api.User;
 import fctreddit.api.java.Result;
 import fctreddit.api.java.Users;
 import fctreddit.api.java.Result.ErrorCode;
-import fctreddit.impl.server.java.JavaUsers;
-import fctreddit.impl.server.persistance.Hibernate;
+import fctreddit.impl.persistance.Hibernate;
 import jakarta.transaction.Transaction;
 
 

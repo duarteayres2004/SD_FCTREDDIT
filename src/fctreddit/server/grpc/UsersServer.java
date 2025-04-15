@@ -3,8 +3,7 @@ package fctreddit.server.grpc;
 import java.net.InetAddress;
 import java.util.logging.Logger;
 
-import fctreddit.impl.server.grpc.GrpcUsersServerStub;
-import fctreddit.impl.server.java.JavaUsers;
+import fctreddit.impl.grpc.GrpcUsersServerStub;
 import io.grpc.Grpc;
 import io.grpc.InsecureServerCredentials;
 import io.grpc.Server;

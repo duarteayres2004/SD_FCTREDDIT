@@ -3,8 +3,7 @@ package fctreddit.impl.rest;
 import fctreddit.api.java.Image;
 import fctreddit.api.java.Result;
 import fctreddit.api.rest.RestImage;
-import fctreddit.clients.java.UsersClient;
-import fctreddit.impl.server.java.JavaImages;
+import fctreddit.impl.java.JavaImages;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.UriInfo;
@@ -12,7 +11,7 @@ import jakarta.ws.rs.core.UriInfo;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
-import static fctreddit.impl.server.rest.UsersResource.errorCodeToStatus;
+import static fctreddit.impl.rest.UsersResource.errorCodeToStatus;
 
 public class ImagesResource implements RestImage {
     private static final Logger Log = Logger.getLogger(ImagesResource.class.getName());

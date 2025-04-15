@@ -4,7 +4,7 @@ import java.net.InetAddress;
 import java.net.URI;
 import java.util.logging.Logger;
 
-import fctreddit.impl.server.rest.ContentsResource;
+import fctreddit.impl.rest.ContentsResource;
 import fctreddit.server.discovery.Discovery;
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;

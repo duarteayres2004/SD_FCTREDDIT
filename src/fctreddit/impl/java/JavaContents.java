@@ -8,7 +8,7 @@ import fctreddit.api.java.Users;
 import fctreddit.clients.grpc.GrpcUsersClient;
 import fctreddit.clients.java.UsersClient;
 import fctreddit.clients.rest.RestUsersClient;
-import fctreddit.impl.server.persistance.Hibernate;
+import fctreddit.impl.persistance.Hibernate;
 import fctreddit.server.discovery.Discovery;
 import jakarta.ws.rs.core.UriInfo;
 

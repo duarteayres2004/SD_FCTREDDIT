@@ -8,7 +8,7 @@ import fctreddit.server.discovery.Discovery;
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
-import fctreddit.impl.server.rest.UsersResource;
+import fctreddit.impl.rest.UsersResource;
 
 public class UsersServer {
 

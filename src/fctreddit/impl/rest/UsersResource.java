@@ -7,7 +7,7 @@ import fctreddit.api.rest.RestUsers;
 import jakarta.ws.rs.WebApplicationException;
 import fctreddit.api.java.Users;
 import fctreddit.api.java.Result;
-import fctreddit.impl.server.java.JavaUsers;
+import fctreddit.impl.java.JavaUsers;
 import jakarta.ws.rs.core.Response.Status;
 
 import java.util.logging.Logger;

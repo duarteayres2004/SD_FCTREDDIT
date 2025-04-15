@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
-import fctreddit.impl.server.rest.ImagesResource;
+import fctreddit.impl.rest.ImagesResource;
 import fctreddit.server.discovery.Discovery;
 
 public class ImagesServer {
