@@ -192,7 +192,7 @@ public class JavaContents implements Content {
             }
 
             //TODO : Descrição contraditoria
-
+            return null;
         } catch (Exception e) {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.BAD_REQUEST);
@@ -215,7 +215,7 @@ public class JavaContents implements Content {
             }
 
             //TODO : Como saber se o user ja deu upvote ou downvote?
-
+            return null;
         } catch (Exception e) {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.BAD_REQUEST);

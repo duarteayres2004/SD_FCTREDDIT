@@ -4,7 +4,9 @@ import fctreddit.api.User;
 import fctreddit.api.java.Image;
 import fctreddit.api.java.Result;
 import fctreddit.api.java.Users;
+import fctreddit.clients.grpc.GrpcUsersClient;
 import fctreddit.clients.java.UsersClient;
+import fctreddit.clients.rest.RestUsersClient;
 import fctreddit.server.discovery.Discovery;
 import jakarta.ws.rs.client.WebTarget;
 import jakarta.ws.rs.core.MediaType;
@@ -27,14 +29,34 @@ public class JavaImages implements Image {
 
     private static final Logger Log = Logger.getLogger(JavaUsers.class.getName());
     private final Discovery discovery;
-    private final UsersClient usersClient;
+
+    private UsersClient usersClient;
 
 
-    public JavaImages(UsersClient UsersClient){
+    //Adicionei isto, dps vê se ta tudo certo
+    public URI tryDiscovery(String serviceName){
+        URI[] Uris = discovery.knownUrisOf(serviceName,1);
+        URI Uri = Uris[0];
+        return Uri;
+    }
+
+
+    public JavaImages(){
         try {
-            this.usersClient = UsersClient;
             discovery = new Discovery(Discovery.DISCOVERY_ADDR);
             discovery.start();
+
+            //Adicionei isto, dps vê se ta tudo certo
+
+            URI usersUri = this.tryDiscovery("Users");
+            if (usersUri == null) {
+                Log.info("URI invalid");
+                //return Result.error(Result.ErrorCode.NOT_FOUND);
+            }
+
+            //Adicionei isto, dps vê se ta tudo certo
+
+            this.usersClient = usersUri.toString().endsWith("rest") ? new RestUsersClient(usersUri) : new GrpcUsersClient();
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize Discovery", e);
         }

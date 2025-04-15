@@ -131,7 +131,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -205,7 +205,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_GrpcUser_descriptor;
     }
@@ -451,7 +451,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -512,11 +512,12 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GrpcUser other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser) obj;
 
-        if (hasUserId() != other.hasUserId()) return false;
+      if (hasUserId() != other.hasUserId()) return false;
       if (hasUserId()) {
         if (!getUserId()
             .equals(other.getUserId())) return false;
@@ -541,7 +542,8 @@ public final class UsersProtoBuf {
         if (!getAvatarUrl()
             .equals(other.getAvatarUrl())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -673,7 +675,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GrpcUser)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUserOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_GrpcUser_descriptor;
       }
@@ -842,7 +844,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -1281,14 +1283,14 @@ public final class UsersProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -1375,7 +1377,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -1431,7 +1433,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_CreateUserArgs_descriptor;
     }
@@ -1472,7 +1474,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -1510,16 +1512,18 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof CreateUserArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs) obj;
 
-        if (hasUser() != other.hasUser()) return false;
+      if (hasUser() != other.hasUser()) return false;
       if (hasUser()) {
         if (!getUser()
             .equals(other.getUser())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -1635,7 +1639,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:CreateUserArgs)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_CreateUserArgs_descriptor;
       }
@@ -1760,7 +1764,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -1902,14 +1906,14 @@ public final class UsersProtoBuf {
         return userBuilder_;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -1994,7 +1998,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -2043,7 +2047,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_CreateUserResult_descriptor;
     }
@@ -2096,7 +2100,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -2133,13 +2137,15 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof CreateUserResult other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult) obj;
 
-        if (!getUserId()
+      if (!getUserId()
           .equals(other.getUserId())) return false;
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -2253,7 +2259,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:CreateUserResult)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResultOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_CreateUserResult_descriptor;
       }
@@ -2371,7 +2377,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -2470,14 +2476,14 @@ public final class UsersProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -2580,7 +2586,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -2636,7 +2642,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_GetUserArgs_descriptor;
     }
@@ -2736,7 +2742,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -2779,18 +2785,20 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GetUserArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs) obj;
 
-        if (!getUserId()
+      if (!getUserId()
           .equals(other.getUserId())) return false;
       if (hasPassword() != other.hasPassword()) return false;
       if (hasPassword()) {
         if (!getPassword()
             .equals(other.getPassword())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -2908,7 +2916,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GetUserArgs)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_GetUserArgs_descriptor;
       }
@@ -3040,7 +3048,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -3223,14 +3231,14 @@ public final class UsersProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -3317,7 +3325,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -3373,7 +3381,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_GetUserResult_descriptor;
     }
@@ -3414,7 +3422,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -3452,16 +3460,18 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GetUserResult other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult) obj;
 
-        if (hasUser() != other.hasUser()) return false;
+      if (hasUser() != other.hasUser()) return false;
       if (hasUser()) {
         if (!getUser()
             .equals(other.getUser())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -3577,7 +3587,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GetUserResult)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResultOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_GetUserResult_descriptor;
       }
@@ -3702,7 +3712,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -3844,14 +3854,14 @@ public final class UsersProtoBuf {
         return userBuilder_;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -3964,7 +3974,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -4032,7 +4042,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_UpdateUserArgs_descriptor;
     }
@@ -4149,7 +4159,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -4199,11 +4209,12 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof UpdateUserArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs) obj;
 
-        if (!getUserId()
+      if (!getUserId()
           .equals(other.getUserId())) return false;
       if (!getPassword()
           .equals(other.getPassword())) return false;
@@ -4212,7 +4223,8 @@ public final class UsersProtoBuf {
         if (!getUser()
             .equals(other.getUser())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -4332,7 +4344,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:UpdateUserArgs)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_UpdateUserArgs_descriptor;
       }
@@ -4471,7 +4483,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -4765,14 +4777,14 @@ public final class UsersProtoBuf {
         return userBuilder_;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -4859,7 +4871,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -4915,7 +4927,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_UpdateUserResult_descriptor;
     }
@@ -4956,7 +4968,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -4994,16 +5006,18 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof UpdateUserResult other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult) obj;
 
-        if (hasUser() != other.hasUser()) return false;
+      if (hasUser() != other.hasUser()) return false;
       if (hasUser()) {
         if (!getUser()
             .equals(other.getUser())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -5119,7 +5133,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:UpdateUserResult)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResultOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_UpdateUserResult_descriptor;
       }
@@ -5244,7 +5258,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -5386,14 +5400,14 @@ public final class UsersProtoBuf {
         return userBuilder_;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -5491,7 +5505,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -5546,7 +5560,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_DeleteUserArgs_descriptor;
     }
@@ -5637,7 +5651,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -5680,15 +5694,17 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof DeleteUserArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs) obj;
 
-        if (!getUserId()
+      if (!getUserId()
           .equals(other.getUserId())) return false;
       if (!getPassword()
           .equals(other.getPassword())) return false;
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -5804,7 +5820,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:DeleteUserArgs)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_DeleteUserArgs_descriptor;
       }
@@ -5929,7 +5945,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -6104,14 +6120,14 @@ public final class UsersProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -6198,7 +6214,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -6254,7 +6270,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_DeleteUserResult_descriptor;
     }
@@ -6295,7 +6311,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -6333,16 +6349,18 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof DeleteUserResult other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult) obj;
 
-        if (hasUser() != other.hasUser()) return false;
+      if (hasUser() != other.hasUser()) return false;
       if (hasUser()) {
         if (!getUser()
             .equals(other.getUser())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -6458,7 +6476,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:DeleteUserResult)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResultOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_DeleteUserResult_descriptor;
       }
@@ -6583,7 +6601,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -6725,14 +6743,14 @@ public final class UsersProtoBuf {
         return userBuilder_;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -6822,7 +6840,7 @@ public final class UsersProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -6872,7 +6890,7 @@ public final class UsersProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_SearchUserArgs_descriptor;
     }
@@ -6934,7 +6952,7 @@ public final class UsersProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -6971,16 +6989,18 @@ public final class UsersProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof SearchUserArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs other = (fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs) obj;
 
-        if (hasPattern() != other.hasPattern()) return false;
+      if (hasPattern() != other.hasPattern()) return false;
       if (hasPattern()) {
         if (!getPattern()
             .equals(other.getPattern())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -7096,7 +7116,7 @@ public final class UsersProtoBuf {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:SearchUserArgs)
         fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.internal_static_SearchUserArgs_descriptor;
       }
@@ -7221,7 +7241,7 @@ public final class UsersProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -7328,14 +7348,14 @@ public final class UsersProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -7435,7 +7455,7 @@ public final class UsersProtoBuf {
       getDescriptor() {
     return descriptor;
   }
-  private static final com.google.protobuf.Descriptors.FileDescriptor
+  private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
     java.lang.String[] descriptorData = {

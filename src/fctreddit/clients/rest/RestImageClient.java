@@ -67,6 +67,7 @@ public class RestImageClient extends ImageClient {
     }
 
 
+
     public Result<byte[]> getImage(String userId, String imageId) {
         Log.info("Fetching image");
 
@@ -85,7 +86,6 @@ public class RestImageClient extends ImageClient {
             }
         });
     }
-
 
     public Result<Void> deleteImage(String userId, String imageId, String password) {
         Log.info("Deleting image for user: " + userId);
