@@ -31,6 +31,7 @@ public class JavaImages implements Image {
     private final Discovery discovery;
 
     private UsersClient usersClient;
+    private String imgPath;
 
 
     public URI tryDiscovery(String serviceName){
@@ -40,18 +41,18 @@ public class JavaImages implements Image {
     }
 
 
-    public JavaImages(){
+    public JavaImages(String URI){
+        this.imgPath = URI;
+
         try {
             discovery = new Discovery(Discovery.DISCOVERY_ADDR);
             discovery.start();
-
-
-
             URI usersUri = this.tryDiscovery("Users");
             if (usersUri == null) {
                 Log.info("URI invalid");
                 //return Result.error(Result.ErrorCode.NOT_FOUND);
             }
+
 
             //Adicionei isto, dps vê se ta tudo certo
 
@@ -80,8 +81,8 @@ public class JavaImages implements Image {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
-
-        File file = new File(String.valueOf(Path.of("fctreddit","images",userId,imageID)));
+        Path path = Path.of(imgPath,userId,imageID,".png");
+        File file = new File(String.valueOf(path));
         try {
             Files.write(file.toPath(), imageContents);
         } catch(IOException e){
@@ -94,7 +95,9 @@ public class JavaImages implements Image {
     @Override
     public Result<byte[]> getImage(String userId, String imageId) {
         Log.info("Fetching image for "+userId);
-        File file = new File(String.valueOf(Path.of("fctreddit","images",userId,imageId)));
+
+        Path path = Path.of(imgPath,userId,imageId,".png");
+        File file = new File(String.valueOf(path));
         if(!file.exists()){
             Log.info("No image found.");
             return Result.error(Result.ErrorCode.NOT_FOUND);
@@ -123,7 +126,8 @@ public class JavaImages implements Image {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
-        File file = new File(String.valueOf(Path.of("fctreddit","images",userId,imageId)));
+        Path path = Path.of(imgPath,userId,imageId,".png");
+        File file = new File(String.valueOf(path));
         if(!file.exists()){
             Log.info("No image found.");
             return Result.error(Result.ErrorCode.NOT_FOUND);

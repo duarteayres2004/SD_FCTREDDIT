@@ -17,10 +17,11 @@ import static fctreddit.impl.server.rest.UsersResource.errorCodeToStatus;
 public class ImagesResource implements RestImage {
     private static final Logger Log = Logger.getLogger(ImagesResource.class.getName());
     final Image impl;
+    public String URI;
 
     public ImagesResource(@Context UriInfo UriInfo) {
-
-        impl = new JavaImages();
+        URI = UriInfo.getAbsolutePath().toString()+"/image";
+        impl = new JavaImages(URI);
     }
 
     @Override
