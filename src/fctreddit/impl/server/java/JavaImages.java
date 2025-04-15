@@ -25,7 +25,7 @@ import java.nio.file.Path;
 import java.util.UUID;
 import java.util.logging.Logger;
 
-public class JavaImages implements Image {
+public class JavaImages extends JavaMethods implements Image {
 
     private static final Logger Log = Logger.getLogger(JavaUsers.class.getName());
     private final Discovery discovery;
@@ -34,27 +34,17 @@ public class JavaImages implements Image {
     private String imgPath;
 
 
-    public URI tryDiscovery(String serviceName){
-        URI[] Uris = discovery.knownUrisOf(serviceName,1);
-        URI Uri = Uris[0];
-        return Uri;
-    }
-
-
-    public JavaImages(String URI){
+    public JavaImages(String URI) {
         this.imgPath = URI;
 
         try {
             discovery = new Discovery(Discovery.DISCOVERY_ADDR);
             discovery.start();
-            URI usersUri = this.tryDiscovery("Users");
+            URI usersUri = tryDiscovery("Users", discovery);
             if (usersUri == null) {
                 Log.info("URI invalid");
                 //return Result.error(Result.ErrorCode.NOT_FOUND);
             }
-
-
-            //Adicionei isto, dps vê se ta tudo certo
 
             this.usersClient = usersUri.toString().endsWith("rest") ? new RestUsersClient(usersUri) : new GrpcUsersClient();
         } catch (Exception e) {
@@ -64,16 +54,15 @@ public class JavaImages implements Image {
 
     @Override
     public Result<String> createImage(String userId, byte[] imageContents, String password) {
-        Log.info("create Image for user: "+userId);
+        Log.info("create Image for user: " + userId);
         String imageID = UUID.randomUUID().toString();
-
-        if(imageContents == null){
+        if (isValidField(imageContents.toString())) {
             Log.info("Empty Image");
-             return Result.error(Result.ErrorCode.BAD_REQUEST);
+            return Result.error(Result.ErrorCode.BAD_REQUEST);
         }
         try {
-            Result<User> r = getUserError(userId,password);
-            if(!r.isOK()) {
+            Result<User> r = getUserError(userId, password, usersClient.getUser(userId, password));
+            if (!r.isOK()) {
                 return Result.error(r.error());
             }
 
@@ -81,11 +70,11 @@ public class JavaImages implements Image {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
-        Path path = Path.of(imgPath,userId,imageID,".png");
+        Path path = Path.of(imgPath, userId, imageID, ".png");
         File file = new File(String.valueOf(path));
         try {
             Files.write(file.toPath(), imageContents);
-        } catch(IOException e){
+        } catch (IOException e) {
             Log.info("Internal error.");
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
@@ -94,16 +83,16 @@ public class JavaImages implements Image {
 
     @Override
     public Result<byte[]> getImage(String userId, String imageId) {
-        Log.info("Fetching image for "+userId);
+        Log.info("Fetching image for " + userId);
 
-        Path path = Path.of(imgPath,userId,imageId,".png");
+        Path path = Path.of(imgPath, userId, imageId, ".png");
         File file = new File(String.valueOf(path));
-        if(!file.exists()){
+        if (!file.exists()) {
             Log.info("No image found.");
             return Result.error(Result.ErrorCode.NOT_FOUND);
         }
         try {
-            byte [] image = Files.readAllBytes(file.toPath());
+            byte[] image = Files.readAllBytes(file.toPath());
             Log.info("Image found.");
             return Result.ok(image);
         } catch (IOException e) {
@@ -114,11 +103,11 @@ public class JavaImages implements Image {
 
     @Override
     public Result<Void> deleteImage(String userId, String imageId, String password) {
-        Log.info("Deleting image for "+userId);
+        Log.info("Deleting image for " + userId);
 
         try {
-            Result<User> r = getUserError(userId,password);
-            if(!r.isOK()) {
+            Result<User> r = getUserError(userId, password, usersClient.getUser(userId, password));
+            if (!r.isOK()) {
                 return Result.error(r.error());
             }
 
@@ -126,29 +115,18 @@ public class JavaImages implements Image {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
-        Path path = Path.of(imgPath,userId,imageId,".png");
+        Path path = Path.of(imgPath, userId, imageId, ".png");
         File file = new File(String.valueOf(path));
-        if(!file.exists()){
+        if (!file.exists()) {
             Log.info("No image found.");
             return Result.error(Result.ErrorCode.NOT_FOUND);
         }
-        if(!file.delete()){
+        if (!file.delete()) {
             Log.info("delete failed.");
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
         Log.info("Image deleted.");
         return Result.ok();
-    }
-
-    private Result<User> getUserError(String userId, String pwd) {
-        Result<User> u = usersClient.getUser(userId, pwd);
-
-        if (u.error().equals(Result.ErrorCode.NOT_FOUND)) {
-            return Result.error(Result.ErrorCode.NOT_FOUND);
-        } else if (u.error().equals(Result.ErrorCode.FORBIDDEN)) {
-            return Result.error(Result.ErrorCode.FORBIDDEN);
-        }
-        return u;
     }
 
 }

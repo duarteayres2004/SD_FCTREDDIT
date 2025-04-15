@@ -140,7 +140,7 @@ public class JavaUsers implements Users {
 			return Result.error(ErrorCode.INTERNAL_ERROR);
 		}
 	}
-	
+
 	private boolean isValidField(String field) {
 		return field != null && !field.isBlank();
 	}
