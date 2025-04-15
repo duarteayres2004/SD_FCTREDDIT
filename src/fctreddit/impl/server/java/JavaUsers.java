@@ -27,13 +27,11 @@ public class JavaUsers implements Users {
 		Log.info("createUser : " + user);
 
 		// Check if user data is valid
-		if (user == null || !this.isValidField(user.getUserId()) || !this.isValidField(user.getPassword()) || !this.isValidField(user.getFullName())
+		if (!this.isValidField(user.getUserId()) || !this.isValidField(user.getPassword()) || !this.isValidField(user.getFullName())
 				|| !this.isValidField(user.getEmail())) {
 			Log.info("User object invalid.");
 			return Result.error(ErrorCode.BAD_REQUEST);
 		}
-
-
 
 		//Iniciar uma transação para poder verificar os restantes erros
 		try {
