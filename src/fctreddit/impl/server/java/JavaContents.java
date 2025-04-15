@@ -29,8 +29,6 @@ public class JavaContents implements Content {
 
 
 
-
-
     public URI tryDiscovery(String serviceName){
         URI[] Uris = discovery.knownUrisOf(serviceName,1);
         URI Uri = Uris[0];

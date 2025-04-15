@@ -4,6 +4,7 @@ import java.net.InetAddress;
 import java.util.logging.Logger;
 
 import fctreddit.impl.server.grpc.GrpcUsersServerStub;
+import fctreddit.impl.server.java.JavaUsers;
 import io.grpc.Grpc;
 import io.grpc.InsecureServerCredentials;
 import io.grpc.Server;
@@ -18,7 +19,7 @@ public static final int PORT = 9000;
 	private static final Logger Log = Logger.getLogger(UsersServer.class.getName());
 	
 	public static void main(String[] args) throws Exception {
-		
+
 		GrpcUsersServerStub stub = new GrpcUsersServerStub();
 		ServerCredentials cred = InsecureServerCredentials.create();
 		Server server = Grpc.newServerBuilderForPort(PORT, cred) .addService(stub).build();
