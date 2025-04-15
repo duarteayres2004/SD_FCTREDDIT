@@ -33,7 +33,6 @@ public class JavaImages implements Image {
     private UsersClient usersClient;
 
 
-    //Adicionei isto, dps vê se ta tudo certo
     public URI tryDiscovery(String serviceName){
         URI[] Uris = discovery.knownUrisOf(serviceName,1);
         URI Uri = Uris[0];
@@ -46,7 +45,7 @@ public class JavaImages implements Image {
             discovery = new Discovery(Discovery.DISCOVERY_ADDR);
             discovery.start();
 
-            //Adicionei isto, dps vê se ta tudo certo
+
 
             URI usersUri = this.tryDiscovery("Users");
             if (usersUri == null) {
@@ -72,12 +71,9 @@ public class JavaImages implements Image {
              return Result.error(Result.ErrorCode.BAD_REQUEST);
         }
         try {
-            Result<User> r = usersClient.getUser(userId,password);
-            if(r.isOK()){
-                Log.info("User authenticated.");
-            } else {
-                Log.info("Authentication failed. Status: " + r);
-                return Result.error(Result.ErrorCode.BAD_REQUEST);
+            Result<User> r = getUserError(userId,password);
+            if(!r.isOK()) {
+                return Result.error(r.error());
             }
 
         } catch (Exception e) {
@@ -117,18 +113,10 @@ public class JavaImages implements Image {
     public Result<Void> deleteImage(String userId, String imageId, String password) {
         Log.info("Deleting image for "+userId);
 
-        try{
-            Result<User> r = usersClient.getUser(userId,password);
-            if(r.isOK()){
-                Log.info("User authenticated.");
-            }
-            else {
-                if(r.equals(Result.error(Result.ErrorCode.FORBIDDEN))) {
-                    Log.info("Authentication failed.");
-                    return Result.error(Result.ErrorCode.FORBIDDEN);
-                }
-                Log.info("Authentication failed. Status: " + r);
-                return Result.error(Result.ErrorCode.BAD_REQUEST);
+        try {
+            Result<User> r = getUserError(userId,password);
+            if(!r.isOK()) {
+                return Result.error(r.error());
             }
 
         } catch (Exception e) {
@@ -142,9 +130,21 @@ public class JavaImages implements Image {
         }
         if(!file.delete()){
             Log.info("delete failed.");
+            return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
         Log.info("Image deleted.");
         return Result.ok();
+    }
+
+    private Result<User> getUserError(String userId, String pwd) {
+        Result<User> u = usersClient.getUser(userId, pwd);
+
+        if (u.error().equals(Result.ErrorCode.NOT_FOUND)) {
+            return Result.error(Result.ErrorCode.NOT_FOUND);
+        } else if (u.error().equals(Result.ErrorCode.FORBIDDEN)) {
+            return Result.error(Result.ErrorCode.FORBIDDEN);
+        }
+        return u;
     }
 
 }
