@@ -28,11 +28,10 @@ public class JavaUsers implements Users {
 
 		// Check if user data is valid
 		if (!this.isValidField(user.getUserId()) || !this.isValidField(user.getPassword()) || !this.isValidField(user.getFullName())
-				|| !this.isValidField(user.getEmail()) ) {
+				|| !this.isValidField(user.getEmail())) {
 			Log.info("User object invalid.");
 			return Result.error(ErrorCode.BAD_REQUEST);
 		}
-
 
 		//Iniciar uma transação para poder verificar os restantes erros
 		try {
@@ -79,8 +78,10 @@ public class JavaUsers implements Users {
 	public Result<User> updateUser(String userId, String password, User user) {
 		Log.info("updateUser : user = " + userId + "; pwd = " + password + "; user = " + user);
 
-		User existingUser = this.getUser(userId, password).value();
-		
+		Result<User> res = this.getUser(userId, password);
+		if (!res.isOK()) return Result.error(res.error());
+
+		User existingUser = res.value();
 
 		try {
 			if (user.getFullName() != null) {
@@ -111,8 +112,12 @@ public class JavaUsers implements Users {
 	@Override
 	public Result<User> deleteUser(String userId, String password) {
 		Log.info("deleteUser : user = " + userId + "; pwd = " + password);
-		User existingUser = this.getUser(userId, password).value();
-		
+
+		Result<User> res = this.getUser(userId, password);
+		if (!res.isOK()) return Result.error(res.error());
+
+		User existingUser = res.value();
+
 		try {
 			hibernate.delete(existingUser);
 		} catch (Exception e) {
@@ -135,7 +140,7 @@ public class JavaUsers implements Users {
 			return Result.error(ErrorCode.INTERNAL_ERROR);
 		}
 	}
-	
+
 	private boolean isValidField(String field) {
 		return field != null && !field.isBlank();
 	}
