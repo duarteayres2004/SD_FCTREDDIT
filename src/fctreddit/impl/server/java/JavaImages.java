@@ -27,7 +27,7 @@ import java.util.logging.Logger;
 
 public class JavaImages extends JavaMethods implements Image {
 
-    private static final Logger Log = Logger.getLogger(JavaUsers.class.getName());
+    private static final Logger Log = Logger.getLogger(JavaImages.class.getName());
     private final Discovery discovery;
 
     private UsersClient usersClient;
