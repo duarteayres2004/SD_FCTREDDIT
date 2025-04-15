@@ -56,7 +56,7 @@ public class JavaImages extends JavaMethods implements Image {
     public Result<String> createImage(String userId, byte[] imageContents, String password) {
         Log.info("create Image for user: " + userId);
         String imageID = UUID.randomUUID().toString();
-        if (isValidField(imageContents.toString())) {
+        if (imageContents == null || imageContents.length == 0) {
             Log.info("Empty Image");
             return Result.error(Result.ErrorCode.BAD_REQUEST);
         }
@@ -70,10 +70,10 @@ public class JavaImages extends JavaMethods implements Image {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
-        Path path = Path.of(imgPath, userId, imageID, ".png");
-        File file = new File(String.valueOf(path));
+        Path path = Path.of(imgPath, userId, imageID+ ".png");
         try {
-            Files.write(file.toPath(), imageContents);
+            Files.createDirectories(path.getParent());
+            Files.write(path, imageContents);
         } catch (IOException e) {
             Log.info("Internal error.");
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
