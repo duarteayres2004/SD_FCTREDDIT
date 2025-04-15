@@ -136,7 +136,7 @@ public class Hibernate {
 	 * Performs a (native) SQL query
 	 * 
 	 * @param <T>           The type of objects returned by the query
-	 * @param jpqlStatement - the jpql query statement
+	 * @param sqlStatement - the jpql query statement
 	 * @param clazz         - the class of the objects that will be returned
 	 * @return - list of objects that match the query
 	 */

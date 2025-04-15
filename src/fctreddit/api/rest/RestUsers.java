@@ -17,10 +17,10 @@ import jakarta.ws.rs.core.MediaType;
 @Path(RestUsers.PATH)
 public interface RestUsers {
 
-	String PATH = "/users";
-	String QUERY = "query";
-	String USER_ID = "userId";
-	String PASSWORD = "password";
+	public static final String PATH = "/users";
+	public static final String QUERY = "query";
+	public static final String USER_ID = "userId";
+	public static final String PASSWORD = "password";
 
 	/**
 	 * Creates a new user.
@@ -72,7 +72,7 @@ public interface RestUsers {
 	 * Deletes the user identified by userId. The spreadsheets owned by the user
 	 * should be eventually removed (asynchronous deletion is ok).
 	 * 
-	 * @param userId the userId of the user
+	 * @param nauserId the userId of the user
 	 * @param password password of the user
 	 * @return OK and the deleted user object in case of success
 	 *         FORBIDDEN if the password is incorrect or null 

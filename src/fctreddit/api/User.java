@@ -68,9 +68,12 @@ public class User {
 		} else if (!password.equals(other.password))
 			return false;
 		if (userId == null) {
-            return other.userId == null;
-		} else return userId.equals(other.userId);
-    }
+			if (other.userId != null)
+				return false;
+		} else if (!userId.equals(other.userId))
+			return false;
+		return true;
+	}
 
 	public String getEmail() {
 		return email;

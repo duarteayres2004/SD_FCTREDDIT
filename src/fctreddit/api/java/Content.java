@@ -9,12 +9,13 @@ public interface Content {
 	/**
 	 * The following constants are the values that can be sent for the query parameter SORTBY
 	 **/
-    String MOST_UP_VOTES = "votes";
-	String MOST_REPLIES = "replies";
+	public static final String MOST_UP_VOTES = "votes";
+	public static final String MOST_REPLIES = "replies";
 	
 	
 	/**
-	 * Creates a new Post (that can be an answer to another Post), generating its unique identifier. 
+	 * Creates a new Post (that can be an answer to another Post, in which case the parentURL should be
+	 * a valid URL for another post), generating its unique identifier. 
 	 * The result should be the identifier of the Post in case of success.
 	 * The creation timestamp of the post should be set to be the time in the server when the request
 	 * was received.
@@ -22,11 +23,11 @@ public interface Content {
 	 * @param post - The Post to be created, that should contain the userId of the author in the appropriate field.
 	 * @param password - the password of author of the new post
 	 * @return OK and PostID if the post was created;
-	 * NOT FOUND, if the owner of the short does not exist;
+	 * NOT FOUND, if the owner of the post does not exist, or if the parent Post (if not null) does not exists;
 	 * FORBIDDEN, if the password is not correct;
 	 * BAD_REQUEST, otherwise.
 	 */
-    Result<String> createPost(Post post, String userPassword);
+	public Result<String> createPost(Post post, String userPassword);
 	
 	/**
 	 * Retrieves a list with all top-level Posts unique identifiers (i.e., Posts that have no parent Post).
@@ -39,11 +40,13 @@ public interface Content {
 	 * @param sortOrder this is an optional parameter, the admissible values are on constants MOST_UP_VOTES
 	 * and MOST_REPLIES, if the first is indicated, posts IDs should be ordered from the Post with more votes
 	 * to the one with less votes. If the second is provided posts IDs should be ordered from the Post with 
-	 * more replies to the one with less replies.
+	 * more direct replies to the one with less direct replies. In ordering by MOST_UP_VOTES or by MOST_REPLIES
+	 * if there are posts with the same number of up votes or direct replies, respectively, those should be
+	 * ordered by the lexicographic order of the PostID.
 	 * @return 	OK and the List of PostIds that match all options in the right order 
 	 * 			
 	 */
-    Result<List<String>> getPosts(long timestamp, String sortOrder);
+	public Result<List<String>> getPosts(long timestamp, String sortOrder);
 	
 	/**
 	 * Retrieves a given post.
@@ -52,11 +55,11 @@ public interface Content {
 	 * @return 	OK and the Post in case of success 
 	 * 			NOT_FOUND if postId does not match an existing Post
 	 */
-    Result<Post> getPost(String postId);
+	public Result<Post> getPost(String postId);
 	
 	/**
 	 * Retrieves a list with all unique identifiers of posts that have the post
-	 * identified by the postId as their ancestor (i.e., the replies to that post),
+	 * identified by the postId as their parent (i.e., the replies to that post),
 	 * the order should be the creation order of those posts.
 	 * @param postId the postId for which answers want to be obtained
 	 * @param timeout (optional) indicates the maximum amount of time that this operation should
@@ -68,7 +71,7 @@ public interface Content {
 	 * 			NOT_FOUND if postId does not match an existing Post	
 	 * 		
 	 */
-    Result<List<String>> getPostAnswers(String postId, long maxTimeout);
+	public Result<List<String>> getPostAnswers(String postId, long maxTimeout);
 	
 	/**
 	 * Updates the contents of a post restricted to the fields:
@@ -83,21 +86,20 @@ public interface Content {
 	 * 			FORBIDDEN, if the password is not correct;
 	 * 			BAD_REQUEST, otherwise.
 	 */
-    Result<Post> updatePost(String postId, String userPassword, Post post);
+	public Result<Post> updatePost(String postId, String userPassword, Post post);
 	
 	/**
 	 * Deletes a given Post, only the author of the Post can do this operation. A successful delete will also remove
-	 * any reply to this post (or replies to those replies) even if performed by different authors.
+	 * any reply to this post (or replies to those replies) even if performed by different authors, however, images
+	 * associated to replies (and replies to replies) should not be deleted by the effects of this operations.
 	 * 
 	 * @param postId the unique identifier of the Post to be deleted
 	 * @return 	NO_CONTENT in case of success 
 	 * 			NOT_FOUND if postId does not match an existing post
 	 * 			FORBIDDEN if the password is not correct (it should always be considered the authorId 
 	 * 					  of the post as the user that is attempting to execute this operation);
-	 *			CONFLICT  if this post already has any other content referencing it (is the parent of
-	 *					  another post or if there is at least one upvote or a downvote to this post.
-	 */
-    Result<Void> deletePost(String postId, String userPassword);
+	 */	
+	public Result<Void> deletePost(String postId, String userPassword);
 	
 	/**
 	 * Adds an upvote to a given post made by a specific user (might be different from the author
@@ -113,7 +115,7 @@ public interface Content {
 	 * 			CONFLICT if the user already has made an upvote or downvote on the post
 	 *			BAD_REQUEST otherwise
 	 */
-    Result<Void> upVotePost(String postId, String userId, String userPassword);
+	public Result<Void> upVotePost(String postId, String userId, String userPassword);
 	
 	/**
 	 * Removes a previously added upvote to a given post made by a specific user (might be different from the author
@@ -127,7 +129,7 @@ public interface Content {
 	 * 			CONFLICT if the user had not made an upvote on this post previously
 	 *			BAD_REQUEST otherwise
 	 */
-    Result<Void> removeUpVotePost(String postId, String userId, String userPassword);
+	public Result<Void> removeUpVotePost(String postId, String userId, String userPassword);
 	
 	/**
 	 * Adds an downvote to a given post made by a specific user (might be different from the author
@@ -143,7 +145,7 @@ public interface Content {
 	 * 			CONFLICT if the user already has made an upvote or downvote on the post
 	 *			BAD_REQUEST otherwise
 	 */
-    Result<Void> downVotePost(String postId, String userId, String userPassword);
+	public Result<Void> downVotePost(String postId, String userId, String userPassword);
 	
 	/**
 	 * Removes a previously added downvote to a given post made by a specific user (might be different from the author
@@ -157,7 +159,7 @@ public interface Content {
 	 * 			CONFLICT if the user had not made an downvote on this post previously
 	 *			BAD_REQUEST otherwise
 	 */
-    Result<Void> removeDownVotePost(String postId, String userId, String userPassword);
+	public Result<Void> removeDownVotePost(String postId, String userId, String userPassword);
 	
 	/**
 	 * Exposes the number of upvotes currently associated with a given post
@@ -165,7 +167,7 @@ public interface Content {
 	 * @return	OK and the number of upvotes in case of success
 	 * 			NOT_FOUND if the postId does not match an existing post
 	 */
-    Result<Integer> getupVotes(String postId);
+	public Result<Integer> getupVotes(String postId);
 	
 	/**
 	 * Exposes the number of downvotes currently associated with a given post
@@ -173,6 +175,6 @@ public interface Content {
 	 * @return	OK and the number of downvotes in case of success
 	 * 			NOT_FOUND if the postId does not match an existing post
 	 */
-    Result<Integer> getDownVotes(String postId);
+	public Result<Integer> getDownVotes(String postId);
 
 }
