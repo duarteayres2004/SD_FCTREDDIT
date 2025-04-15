@@ -164,7 +164,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -253,17 +253,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GrpcPost_descriptor;
+      return ContentProtoBuf.internal_static_GrpcPost_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GrpcPost_fieldAccessorTable
+      return ContentProtoBuf.internal_static_GrpcPost_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder.class);
+              ContentProtoBuf.GrpcPost.class, ContentProtoBuf.GrpcPost.Builder.class);
     }
 
     private int bitField0_;
@@ -556,7 +556,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -638,11 +638,12 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GrpcPost other)) {
+      if (!(obj instanceof ContentProtoBuf.GrpcPost)) {
         return super.equals(obj);
       }
+      ContentProtoBuf.GrpcPost other = (ContentProtoBuf.GrpcPost) obj;
 
-        if (hasPostId() != other.hasPostId()) return false;
+      if (hasPostId() != other.hasPostId()) return false;
       if (hasPostId()) {
         if (!getPostId()
             .equals(other.getPostId())) return false;
@@ -682,7 +683,8 @@ public final class ContentProtoBuf {
         if (getDownVote()
             != other.getDownVote()) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -730,69 +732,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(byte[] data)
+    public static ContentProtoBuf.GrpcPost parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(java.io.InputStream input)
+    public static ContentProtoBuf.GrpcPost parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseDelimitedFrom(java.io.InputStream input)
+    public static ContentProtoBuf.GrpcPost parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseDelimitedFrom(
+    public static ContentProtoBuf.GrpcPost parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parseFrom(
+    public static ContentProtoBuf.GrpcPost parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -805,7 +807,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost prototype) {
+    public static Builder newBuilder(ContentProtoBuf.GrpcPost prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -826,21 +828,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GrpcPost)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        ContentProtoBuf.GrpcPostOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GrpcPost_descriptor;
+        return ContentProtoBuf.internal_static_GrpcPost_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GrpcPost_fieldAccessorTable
+        return ContentProtoBuf.internal_static_GrpcPost_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder.class);
+                ContentProtoBuf.GrpcPost.class, ContentProtoBuf.GrpcPost.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -880,17 +882,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GrpcPost_descriptor;
+        return ContentProtoBuf.internal_static_GrpcPost_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance();
+      public ContentProtoBuf.GrpcPost getDefaultInstanceForType() {
+        return ContentProtoBuf.GrpcPost.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost result = buildPartial();
+      public ContentProtoBuf.GrpcPost build() {
+        ContentProtoBuf.GrpcPost result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -898,8 +900,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost(this);
+      public ContentProtoBuf.GrpcPost buildPartial() {
+        ContentProtoBuf.GrpcPost result = new ContentProtoBuf.GrpcPost(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -973,16 +975,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost)other);
+        if (other instanceof ContentProtoBuf.GrpcPost) {
+          return mergeFrom((ContentProtoBuf.GrpcPost)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance()) return this;
+      public Builder mergeFrom(ContentProtoBuf.GrpcPost other) {
+        if (other == ContentProtoBuf.GrpcPost.getDefaultInstance()) return this;
         if (other.hasPostId()) {
           bitField0_ |= 0x00000001;
           postId_ = other.postId_;
@@ -1023,7 +1025,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -1032,11 +1034,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost parsedMessage = null;
+        ContentProtoBuf.GrpcPost parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost) e.getUnfinishedMessage();
+          parsedMessage = (ContentProtoBuf.GrpcPost) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1579,14 +1581,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -1595,12 +1597,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:GrpcPost)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost DEFAULT_INSTANCE;
+    private static final ContentProtoBuf.GrpcPost DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost();
+      DEFAULT_INSTANCE = new ContentProtoBuf.GrpcPost();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getDefaultInstance() {
+    public static ContentProtoBuf.GrpcPost getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1625,7 +1627,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getDefaultInstanceForType() {
+    public ContentProtoBuf.GrpcPost getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1644,11 +1646,11 @@ public final class ContentProtoBuf {
      * <code>.GrpcPost post = 1;</code>
      * @return The post.
      */
-    fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getPost();
+    ContentProtoBuf.GrpcPost getPost();
     /**
      * <code>.GrpcPost post = 1;</code>
      */
-    fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder();
+    ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder();
 
     /**
      * <code>optional string password = 2;</code>
@@ -1691,7 +1693,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -1715,11 +1717,11 @@ public final class ContentProtoBuf {
               done = true;
               break;
             case 10: {
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder subBuilder = null;
+              ContentProtoBuf.GrpcPost.Builder subBuilder = null;
               if (post_ != null) {
                 subBuilder = post_.toBuilder();
               }
-              post_ = input.readMessage(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.parser(), extensionRegistry);
+              post_ = input.readMessage(ContentProtoBuf.GrpcPost.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(post_);
                 post_ = subBuilder.buildPartial();
@@ -1754,22 +1756,22 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostArgs_descriptor;
+      return ContentProtoBuf.internal_static_CreatePostArgs_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostArgs_fieldAccessorTable
+      return ContentProtoBuf.internal_static_CreatePostArgs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.Builder.class);
+              ContentProtoBuf.CreatePostArgs.class, ContentProtoBuf.CreatePostArgs.Builder.class);
     }
 
     private int bitField0_;
     public static final int POST_FIELD_NUMBER = 1;
-    private fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost post_;
+    private ContentProtoBuf.GrpcPost post_;
     /**
      * <code>.GrpcPost post = 1;</code>
      * @return Whether the post field is set.
@@ -1783,14 +1785,14 @@ public final class ContentProtoBuf {
      * @return The post.
      */
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getPost() {
-      return post_ == null ? fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
+    public ContentProtoBuf.GrpcPost getPost() {
+      return post_ == null ? ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
     }
     /**
      * <code>.GrpcPost post = 1;</code>
      */
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
+    public ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
       return getPost();
     }
 
@@ -1842,7 +1844,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -1886,11 +1888,12 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof CreatePostArgs other)) {
+      if (!(obj instanceof ContentProtoBuf.CreatePostArgs)) {
         return super.equals(obj);
       }
+      ContentProtoBuf.CreatePostArgs other = (ContentProtoBuf.CreatePostArgs) obj;
 
-        if (hasPost() != other.hasPost()) return false;
+      if (hasPost() != other.hasPost()) return false;
       if (hasPost()) {
         if (!getPost()
             .equals(other.getPost())) return false;
@@ -1900,7 +1903,8 @@ public final class ContentProtoBuf {
         if (!getPassword()
             .equals(other.getPassword())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -1923,69 +1927,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(byte[] data)
+    public static ContentProtoBuf.CreatePostArgs parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(java.io.InputStream input)
+    public static ContentProtoBuf.CreatePostArgs parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseDelimitedFrom(java.io.InputStream input)
+    public static ContentProtoBuf.CreatePostArgs parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseDelimitedFrom(
+    public static ContentProtoBuf.CreatePostArgs parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parseFrom(
+    public static ContentProtoBuf.CreatePostArgs parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1998,7 +2002,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs prototype) {
+    public static Builder newBuilder(ContentProtoBuf.CreatePostArgs prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2019,21 +2023,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:CreatePostArgs)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        ContentProtoBuf.CreatePostArgsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostArgs_descriptor;
+        return ContentProtoBuf.internal_static_CreatePostArgs_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostArgs_fieldAccessorTable
+        return ContentProtoBuf.internal_static_CreatePostArgs_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.Builder.class);
+                ContentProtoBuf.CreatePostArgs.class, ContentProtoBuf.CreatePostArgs.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.CreatePostArgs.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2065,17 +2069,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostArgs_descriptor;
+        return ContentProtoBuf.internal_static_CreatePostArgs_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.getDefaultInstance();
+      public ContentProtoBuf.CreatePostArgs getDefaultInstanceForType() {
+        return ContentProtoBuf.CreatePostArgs.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs result = buildPartial();
+      public ContentProtoBuf.CreatePostArgs build() {
+        ContentProtoBuf.CreatePostArgs result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2083,8 +2087,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs(this);
+      public ContentProtoBuf.CreatePostArgs buildPartial() {
+        ContentProtoBuf.CreatePostArgs result = new ContentProtoBuf.CreatePostArgs(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (postBuilder_ == null) {
@@ -2135,16 +2139,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs)other);
+        if (other instanceof ContentProtoBuf.CreatePostArgs) {
+          return mergeFrom((ContentProtoBuf.CreatePostArgs)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.getDefaultInstance()) return this;
+      public Builder mergeFrom(ContentProtoBuf.CreatePostArgs other) {
+        if (other == ContentProtoBuf.CreatePostArgs.getDefaultInstance()) return this;
         if (other.hasPost()) {
           mergePost(other.getPost());
         }
@@ -2159,7 +2163,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -2168,11 +2172,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs parsedMessage = null;
+        ContentProtoBuf.CreatePostArgs parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs) e.getUnfinishedMessage();
+          parsedMessage = (ContentProtoBuf.CreatePostArgs) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2183,9 +2187,9 @@ public final class ContentProtoBuf {
       }
       private int bitField0_;
 
-      private fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost post_;
+      private ContentProtoBuf.GrpcPost post_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder> postBuilder_;
+          ContentProtoBuf.GrpcPost, ContentProtoBuf.GrpcPost.Builder, ContentProtoBuf.GrpcPostOrBuilder> postBuilder_;
       /**
        * <code>.GrpcPost post = 1;</code>
        * @return Whether the post field is set.
@@ -2197,9 +2201,9 @@ public final class ContentProtoBuf {
        * <code>.GrpcPost post = 1;</code>
        * @return The post.
        */
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getPost() {
+      public ContentProtoBuf.GrpcPost getPost() {
         if (postBuilder_ == null) {
-          return post_ == null ? fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
+          return post_ == null ? ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
         } else {
           return postBuilder_.getMessage();
         }
@@ -2207,7 +2211,7 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 1;</code>
        */
-      public Builder setPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost value) {
+      public Builder setPost(ContentProtoBuf.GrpcPost value) {
         if (postBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2224,7 +2228,7 @@ public final class ContentProtoBuf {
        * <code>.GrpcPost post = 1;</code>
        */
       public Builder setPost(
-          fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder builderForValue) {
+          ContentProtoBuf.GrpcPost.Builder builderForValue) {
         if (postBuilder_ == null) {
           post_ = builderForValue.build();
           onChanged();
@@ -2237,11 +2241,11 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 1;</code>
        */
-      public Builder mergePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost value) {
+      public Builder mergePost(ContentProtoBuf.GrpcPost value) {
         if (postBuilder_ == null) {
           if (post_ != null) {
             post_ =
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.newBuilder(post_).mergeFrom(value).buildPartial();
+              ContentProtoBuf.GrpcPost.newBuilder(post_).mergeFrom(value).buildPartial();
           } else {
             post_ = value;
           }
@@ -2269,7 +2273,7 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 1;</code>
        */
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder getPostBuilder() {
+      public ContentProtoBuf.GrpcPost.Builder getPostBuilder() {
         
         onChanged();
         return getPostFieldBuilder().getBuilder();
@@ -2277,23 +2281,23 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 1;</code>
        */
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
+      public ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
         if (postBuilder_ != null) {
           return postBuilder_.getMessageOrBuilder();
         } else {
           return post_ == null ?
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
+              ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
         }
       }
       /**
        * <code>.GrpcPost post = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder> 
+          ContentProtoBuf.GrpcPost, ContentProtoBuf.GrpcPost.Builder, ContentProtoBuf.GrpcPostOrBuilder>
           getPostFieldBuilder() {
         if (postBuilder_ == null) {
           postBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder>(
+              ContentProtoBuf.GrpcPost, ContentProtoBuf.GrpcPost.Builder, ContentProtoBuf.GrpcPostOrBuilder>(
                   getPost(),
                   getParentForChildren(),
                   isClean());
@@ -2385,14 +2389,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -2401,12 +2405,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:CreatePostArgs)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs DEFAULT_INSTANCE;
+    private static final ContentProtoBuf.CreatePostArgs DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs();
+      DEFAULT_INSTANCE = new ContentProtoBuf.CreatePostArgs();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs getDefaultInstance() {
+    public static ContentProtoBuf.CreatePostArgs getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2431,7 +2435,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs getDefaultInstanceForType() {
+    public ContentProtoBuf.CreatePostArgs getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2477,7 +2481,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -2526,17 +2530,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostResult_descriptor;
+      return ContentProtoBuf.internal_static_CreatePostResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostResult_fieldAccessorTable
+      return ContentProtoBuf.internal_static_CreatePostResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.Builder.class);
+              ContentProtoBuf.CreatePostResult.class, ContentProtoBuf.CreatePostResult.Builder.class);
     }
 
     public static final int POSTID_FIELD_NUMBER = 1;
@@ -2579,7 +2583,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -2616,13 +2620,15 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof CreatePostResult other)) {
+      if (!(obj instanceof ContentProtoBuf.CreatePostResult)) {
         return super.equals(obj);
       }
+      ContentProtoBuf.CreatePostResult other = (ContentProtoBuf.CreatePostResult) obj;
 
-        if (!getPostId()
+      if (!getPostId()
           .equals(other.getPostId())) return false;
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -2639,69 +2645,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(byte[] data)
+    public static ContentProtoBuf.CreatePostResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(java.io.InputStream input)
+    public static ContentProtoBuf.CreatePostResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseDelimitedFrom(java.io.InputStream input)
+    public static ContentProtoBuf.CreatePostResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseDelimitedFrom(
+    public static ContentProtoBuf.CreatePostResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parseFrom(
+    public static ContentProtoBuf.CreatePostResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2714,7 +2720,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult prototype) {
+    public static Builder newBuilder(ContentProtoBuf.CreatePostResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2735,21 +2741,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:CreatePostResult)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResultOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        ContentProtoBuf.CreatePostResultOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostResult_descriptor;
+        return ContentProtoBuf.internal_static_CreatePostResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostResult_fieldAccessorTable
+        return ContentProtoBuf.internal_static_CreatePostResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.Builder.class);
+                ContentProtoBuf.CreatePostResult.class, ContentProtoBuf.CreatePostResult.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.CreatePostResult.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2775,17 +2781,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_CreatePostResult_descriptor;
+        return ContentProtoBuf.internal_static_CreatePostResult_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.getDefaultInstance();
+      public ContentProtoBuf.CreatePostResult getDefaultInstanceForType() {
+        return ContentProtoBuf.CreatePostResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult result = buildPartial();
+      public ContentProtoBuf.CreatePostResult build() {
+        ContentProtoBuf.CreatePostResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2793,8 +2799,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult(this);
+      public ContentProtoBuf.CreatePostResult buildPartial() {
+        ContentProtoBuf.CreatePostResult result = new ContentProtoBuf.CreatePostResult(this);
         result.postId_ = postId_;
         onBuilt();
         return result;
@@ -2834,16 +2840,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult)other);
+        if (other instanceof ContentProtoBuf.CreatePostResult) {
+          return mergeFrom((ContentProtoBuf.CreatePostResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(ContentProtoBuf.CreatePostResult other) {
+        if (other == ContentProtoBuf.CreatePostResult.getDefaultInstance()) return this;
         if (!other.getPostId().isEmpty()) {
           postId_ = other.postId_;
           onChanged();
@@ -2854,7 +2860,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -2863,11 +2869,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult parsedMessage = null;
+        ContentProtoBuf.CreatePostResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult) e.getUnfinishedMessage();
+          parsedMessage = (ContentProtoBuf.CreatePostResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2953,14 +2959,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -2969,12 +2975,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:CreatePostResult)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult DEFAULT_INSTANCE;
+    private static final ContentProtoBuf.CreatePostResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult();
+      DEFAULT_INSTANCE = new ContentProtoBuf.CreatePostResult();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult getDefaultInstance() {
+    public static ContentProtoBuf.CreatePostResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2999,7 +3005,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult getDefaultInstanceForType() {
+    public ContentProtoBuf.CreatePostResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3061,7 +3067,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -3116,17 +3122,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsArgs_descriptor;
+      return ContentProtoBuf.internal_static_GetPostsArgs_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsArgs_fieldAccessorTable
+      return ContentProtoBuf.internal_static_GetPostsArgs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.Builder.class);
+              ContentProtoBuf.GetPostsArgs.class, ContentProtoBuf.GetPostsArgs.Builder.class);
     }
 
     private int bitField0_;
@@ -3197,7 +3203,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -3241,11 +3247,12 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GetPostsArgs other)) {
+      if (!(obj instanceof ContentProtoBuf.GetPostsArgs)) {
         return super.equals(obj);
       }
+      ContentProtoBuf.GetPostsArgs other = (ContentProtoBuf.GetPostsArgs) obj;
 
-        if (hasTimestamp() != other.hasTimestamp()) return false;
+      if (hasTimestamp() != other.hasTimestamp()) return false;
       if (hasTimestamp()) {
         if (getTimestamp()
             != other.getTimestamp()) return false;
@@ -3255,7 +3262,8 @@ public final class ContentProtoBuf {
         if (!getSortOrder()
             .equals(other.getSortOrder())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -3279,69 +3287,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(byte[] data)
+    public static ContentProtoBuf.GetPostsArgs parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(java.io.InputStream input)
+    public static ContentProtoBuf.GetPostsArgs parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseDelimitedFrom(java.io.InputStream input)
+    public static ContentProtoBuf.GetPostsArgs parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseDelimitedFrom(
+    public static ContentProtoBuf.GetPostsArgs parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parseFrom(
+    public static ContentProtoBuf.GetPostsArgs parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3354,7 +3362,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs prototype) {
+    public static Builder newBuilder(ContentProtoBuf.GetPostsArgs prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3375,21 +3383,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GetPostsArgs)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        ContentProtoBuf.GetPostsArgsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsArgs_descriptor;
+        return ContentProtoBuf.internal_static_GetPostsArgs_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsArgs_fieldAccessorTable
+        return ContentProtoBuf.internal_static_GetPostsArgs_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.Builder.class);
+                ContentProtoBuf.GetPostsArgs.class, ContentProtoBuf.GetPostsArgs.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3417,17 +3425,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsArgs_descriptor;
+        return ContentProtoBuf.internal_static_GetPostsArgs_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.getDefaultInstance();
+      public ContentProtoBuf.GetPostsArgs getDefaultInstanceForType() {
+        return ContentProtoBuf.GetPostsArgs.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs result = buildPartial();
+      public ContentProtoBuf.GetPostsArgs build() {
+        ContentProtoBuf.GetPostsArgs result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3435,8 +3443,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs(this);
+      public ContentProtoBuf.GetPostsArgs buildPartial() {
+        ContentProtoBuf.GetPostsArgs result = new ContentProtoBuf.GetPostsArgs(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -3486,7 +3494,7 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs) {
+        if (other instanceof ContentProtoBuf.GetPostsArgs) {
           return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs)other);
         } else {
           super.mergeFrom(other);
@@ -3494,8 +3502,8 @@ public final class ContentProtoBuf {
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs.getDefaultInstance()) return this;
         if (other.hasTimestamp()) {
           setTimestamp(other.getTimestamp());
         }
@@ -3510,7 +3518,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -3519,11 +3527,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3656,14 +3664,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -3672,12 +3680,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:GetPostsArgs)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3702,7 +3710,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsArgs getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3761,7 +3769,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -3786,7 +3794,7 @@ public final class ContentProtoBuf {
               break;
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
-              if ((mutable_bitField0_ & 0x00000001) == 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 postId_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -3817,17 +3825,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult.Builder.class);
     }
 
     public static final int POSTID_FIELD_NUMBER = 1;
@@ -3867,7 +3875,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -3897,7 +3905,7 @@ public final class ContentProtoBuf {
           dataSize += computeStringSizeNoTag(postId_.getRaw(i));
         }
         size += dataSize;
-        size += getPostIdList().size();
+        size += 1 * getPostIdList().size();
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3909,13 +3917,15 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GetPostsResult other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult) obj;
 
-        if (!getPostIdList()
+      if (!getPostIdList()
           .equals(other.getPostIdList())) return false;
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -3934,69 +3944,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4009,7 +4019,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4030,21 +4040,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GetPostsResult)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResultOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResultOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4070,17 +4080,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostsResult_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4088,8 +4098,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
           postId_ = postId_.getUnmodifiableView();
@@ -4134,16 +4144,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult.getDefaultInstance()) return this;
         if (!other.postId_.isEmpty()) {
           if (postId_.isEmpty()) {
             postId_ = other.postId_;
@@ -4160,7 +4170,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -4169,11 +4179,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4186,7 +4196,7 @@ public final class ContentProtoBuf {
 
       private com.google.protobuf.LazyStringList postId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensurePostIdIsMutable() {
-        if ((bitField0_ & 0x00000001) == 0) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           postId_ = new com.google.protobuf.LazyStringArrayList(postId_);
           bitField0_ |= 0x00000001;
          }
@@ -4294,14 +4304,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -4310,12 +4320,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:GetPostsResult)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4340,7 +4350,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostsResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4386,7 +4396,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -4435,17 +4445,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs.Builder.class);
     }
 
     public static final int POSTID_FIELD_NUMBER = 1;
@@ -4488,7 +4498,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -4525,13 +4535,15 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GetPostArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs) obj;
 
-        if (!getPostId()
+      if (!getPostId()
           .equals(other.getPostId())) return false;
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -4548,69 +4560,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4623,7 +4635,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4644,21 +4656,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GetPostArgs)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4684,17 +4696,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostArgs_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4702,8 +4714,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs(this);
         result.postId_ = postId_;
         onBuilt();
         return result;
@@ -4743,16 +4755,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs.getDefaultInstance()) return this;
         if (!other.getPostId().isEmpty()) {
           postId_ = other.postId_;
           onChanged();
@@ -4763,7 +4775,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -4772,11 +4784,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4862,14 +4874,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -4878,12 +4890,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:GetPostArgs)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4908,7 +4920,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostArgs getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4965,7 +4977,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -5020,17 +5032,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.Builder.class);
     }
 
     private int bitField0_;
@@ -5093,7 +5105,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -5137,18 +5149,20 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof GetPostAnswersArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs) obj;
 
-        if (!getPostId()
+      if (!getPostId()
           .equals(other.getPostId())) return false;
       if (hasTimeout() != other.hasTimeout()) return false;
       if (hasTimeout()) {
         if (getTimeout()
             != other.getTimeout()) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -5170,69 +5184,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5245,7 +5259,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -5266,21 +5280,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:GetPostAnswersArgs)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5308,17 +5322,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_GetPostAnswersArgs_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -5326,8 +5340,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.postId_ = postId_;
@@ -5374,16 +5388,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.getDefaultInstance()) return this;
         if (!other.getPostId().isEmpty()) {
           postId_ = other.postId_;
           onChanged();
@@ -5397,7 +5411,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -5406,11 +5420,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5536,14 +5550,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -5552,12 +5566,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:GetPostAnswersArgs)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5582,7 +5596,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5630,11 +5644,11 @@ public final class ContentProtoBuf {
      * <code>.GrpcPost post = 3;</code>
      * @return The post.
      */
-    fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getPost();
+    fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost getPost();
     /**
      * <code>.GrpcPost post = 3;</code>
      */
-    fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder();
+    fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder();
   }
   /**
    * Protobuf type {@code UpdatePostArgs}
@@ -5661,7 +5675,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -5697,11 +5711,11 @@ public final class ContentProtoBuf {
               break;
             }
             case 26: {
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder subBuilder = null;
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder subBuilder = null;
               if (post_ != null) {
                 subBuilder = post_.toBuilder();
               }
-              post_ = input.readMessage(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.parser(), extensionRegistry);
+              post_ = input.readMessage(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(post_);
                 post_ = subBuilder.buildPartial();
@@ -5730,17 +5744,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.Builder.class);
     }
 
     private int bitField0_;
@@ -5829,7 +5843,7 @@ public final class ContentProtoBuf {
     }
 
     public static final int POST_FIELD_NUMBER = 3;
-    private fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost post_;
+    private fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost post_;
     /**
      * <code>.GrpcPost post = 3;</code>
      * @return Whether the post field is set.
@@ -5843,20 +5857,20 @@ public final class ContentProtoBuf {
      * @return The post.
      */
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getPost() {
-      return post_ == null ? fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost getPost() {
+      return post_ == null ? fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
     }
     /**
      * <code>.GrpcPost post = 3;</code>
      */
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
       return getPost();
     }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -5906,11 +5920,12 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof UpdatePostArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs) obj;
 
-        if (!getPostId()
+      if (!getPostId()
           .equals(other.getPostId())) return false;
       if (hasPassword() != other.hasPassword()) return false;
       if (hasPassword()) {
@@ -5922,7 +5937,8 @@ public final class ContentProtoBuf {
         if (!getPost()
             .equals(other.getPost())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -5947,69 +5963,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6022,7 +6038,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -6043,21 +6059,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:UpdatePostArgs)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6091,17 +6107,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_UpdatePostArgs_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -6109,8 +6125,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.postId_ = postId_;
@@ -6162,16 +6178,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.getDefaultInstance()) return this;
         if (!other.getPostId().isEmpty()) {
           postId_ = other.postId_;
           onChanged();
@@ -6190,7 +6206,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -6199,11 +6215,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -6373,9 +6389,9 @@ public final class ContentProtoBuf {
         return this;
       }
 
-      private fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost post_;
+      private fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost post_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder> postBuilder_;
+          fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder> postBuilder_;
       /**
        * <code>.GrpcPost post = 3;</code>
        * @return Whether the post field is set.
@@ -6387,9 +6403,9 @@ public final class ContentProtoBuf {
        * <code>.GrpcPost post = 3;</code>
        * @return The post.
        */
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getPost() {
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost getPost() {
         if (postBuilder_ == null) {
-          return post_ == null ? fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
+          return post_ == null ? fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
         } else {
           return postBuilder_.getMessage();
         }
@@ -6397,7 +6413,7 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 3;</code>
        */
-      public Builder setPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost value) {
+      public Builder setPost(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost value) {
         if (postBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6414,7 +6430,7 @@ public final class ContentProtoBuf {
        * <code>.GrpcPost post = 3;</code>
        */
       public Builder setPost(
-          fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder builderForValue) {
+          fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder builderForValue) {
         if (postBuilder_ == null) {
           post_ = builderForValue.build();
           onChanged();
@@ -6427,11 +6443,11 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 3;</code>
        */
-      public Builder mergePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost value) {
+      public Builder mergePost(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost value) {
         if (postBuilder_ == null) {
           if (post_ != null) {
             post_ =
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.newBuilder(post_).mergeFrom(value).buildPartial();
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.newBuilder(post_).mergeFrom(value).buildPartial();
           } else {
             post_ = value;
           }
@@ -6459,7 +6475,7 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 3;</code>
        */
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder getPostBuilder() {
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder getPostBuilder() {
         
         onChanged();
         return getPostFieldBuilder().getBuilder();
@@ -6467,23 +6483,23 @@ public final class ContentProtoBuf {
       /**
        * <code>.GrpcPost post = 3;</code>
        */
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder getPostOrBuilder() {
         if (postBuilder_ != null) {
           return postBuilder_.getMessageOrBuilder();
         } else {
           return post_ == null ?
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance() : post_;
         }
       }
       /**
        * <code>.GrpcPost post = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder> 
+          fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder> 
           getPostFieldBuilder() {
         if (postBuilder_ == null) {
           postBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder>(
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPost.Builder, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.GrpcPostOrBuilder>(
                   getPost(),
                   getParentForChildren(),
                   isClean());
@@ -6492,14 +6508,14 @@ public final class ContentProtoBuf {
         return postBuilder_;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -6508,12 +6524,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:UpdatePostArgs)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6538,7 +6554,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.UpdatePostArgs getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6602,7 +6618,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -6658,17 +6674,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs.Builder.class);
     }
 
     private int bitField0_;
@@ -6758,7 +6774,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -6801,18 +6817,20 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof DeletePostArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs) obj;
 
-        if (!getPostId()
+      if (!getPostId()
           .equals(other.getPostId())) return false;
       if (hasPassword() != other.hasPassword()) return false;
       if (hasPassword()) {
         if (!getPassword()
             .equals(other.getPassword())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -6833,69 +6851,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6908,7 +6926,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -6929,21 +6947,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:DeletePostArgs)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6971,17 +6989,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_DeletePostArgs_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -6989,8 +7007,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.postId_ = postId_;
@@ -7037,16 +7055,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs.getDefaultInstance()) return this;
         if (!other.getPostId().isEmpty()) {
           postId_ = other.postId_;
           onChanged();
@@ -7062,7 +7080,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -7071,11 +7089,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -7245,14 +7263,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -7261,12 +7279,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:DeletePostArgs)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7291,7 +7309,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.DeletePostArgs getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7368,7 +7386,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -7430,17 +7448,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.Builder.class);
     }
 
     private int bitField0_;
@@ -7568,7 +7586,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -7617,11 +7635,12 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof ChangeVoteArgs other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) obj;
 
-        if (!getPostId()
+      if (!getPostId()
           .equals(other.getPostId())) return false;
       if (!getUserId()
           .equals(other.getUserId())) return false;
@@ -7630,7 +7649,8 @@ public final class ContentProtoBuf {
         if (!getPassword()
             .equals(other.getPassword())) return false;
       }
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -7653,69 +7673,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7728,7 +7748,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -7749,21 +7769,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ChangeVoteArgs)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgsOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -7793,17 +7813,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_ChangeVoteArgs_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -7811,8 +7831,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.postId_ = postId_;
@@ -7860,16 +7880,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()) return this;
         if (!other.getPostId().isEmpty()) {
           postId_ = other.postId_;
           onChanged();
@@ -7889,7 +7909,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -7898,11 +7918,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -8148,14 +8168,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -8164,12 +8184,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:ChangeVoteArgs)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8194,7 +8214,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8227,7 +8247,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -8270,22 +8290,22 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -8316,11 +8336,13 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof EmptyMessage other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage) obj;
 
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -8335,69 +8357,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8410,7 +8432,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -8431,21 +8453,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:EmptyMessage)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessageOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessageOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -8469,17 +8491,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_EmptyMessage_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -8487,8 +8509,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage(this);
         onBuilt();
         return result;
       }
@@ -8527,23 +8549,23 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -8552,11 +8574,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -8566,14 +8588,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -8582,12 +8604,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:EmptyMessage)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8612,7 +8634,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.EmptyMessage getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8651,7 +8673,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public com.google.protobuf.UnknownFieldSet
+    public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -8699,17 +8721,17 @@ public final class ContentProtoBuf {
         makeExtensionsImmutable();
       }
     }
-    public static com.google.protobuf.Descriptors.Descriptor
+    public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_descriptor;
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_fieldAccessorTable
+      return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.Builder.class);
+              fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult.Builder.class);
     }
 
     public static final int COUNT_FIELD_NUMBER = 1;
@@ -8725,7 +8747,7 @@ public final class ContentProtoBuf {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public boolean isInitialized() {
+    public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -8763,13 +8785,15 @@ public final class ContentProtoBuf {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof VoteCountResult other)) {
+      if (!(obj instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult)) {
         return super.equals(obj);
       }
+      fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult other = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult) obj;
 
-        if (getCount()
+      if (getCount()
           != other.getCount()) return false;
-        return unknownFields.equals(other.unknownFields);
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
     }
 
     @java.lang.Override
@@ -8786,69 +8810,69 @@ public final class ContentProtoBuf {
       return hash;
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(byte[] data)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseDelimitedFrom(java.io.InputStream input)
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseDelimitedFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8861,7 +8885,7 @@ public final class ContentProtoBuf {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult prototype) {
+    public static Builder newBuilder(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -8882,21 +8906,21 @@ public final class ContentProtoBuf {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:VoteCountResult)
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResultOrBuilder {
-      public static com.google.protobuf.Descriptors.Descriptor
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResultOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_fieldAccessorTable
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.class, fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.Builder.class);
+                fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult.class, fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult.Builder.class);
       }
 
-      // Construct using fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.newBuilder()
+      // Construct using fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -8922,17 +8946,17 @@ public final class ContentProtoBuf {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_descriptor;
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.internal_static_VoteCountResult_descriptor;
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult getDefaultInstanceForType() {
-        return fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.getDefaultInstance();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult getDefaultInstanceForType() {
+        return fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult build() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult result = buildPartial();
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult build() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -8940,8 +8964,8 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult buildPartial() {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult result = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult(this);
+      public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult buildPartial() {
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult result = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult(this);
         result.count_ = count_;
         onBuilt();
         return result;
@@ -8981,16 +9005,16 @@ public final class ContentProtoBuf {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult) {
-          return mergeFrom((fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult)other);
+        if (other instanceof fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult) {
+          return mergeFrom((fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult other) {
-        if (other == fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult other) {
+        if (other == fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult.getDefaultInstance()) return this;
         if (other.getCount() != 0) {
           setCount(other.getCount());
         }
@@ -9000,7 +9024,7 @@ public final class ContentProtoBuf {
       }
 
       @java.lang.Override
-      public boolean isInitialized() {
+      public final boolean isInitialized() {
         return true;
       }
 
@@ -9009,11 +9033,11 @@ public final class ContentProtoBuf {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult parsedMessage = null;
+        fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult) e.getUnfinishedMessage();
+          parsedMessage = (fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -9054,14 +9078,14 @@ public final class ContentProtoBuf {
         return this;
       }
       @java.lang.Override
-      public Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
 
@@ -9070,12 +9094,12 @@ public final class ContentProtoBuf {
     }
 
     // @@protoc_insertion_point(class_scope:VoteCountResult)
-    private static final fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult DEFAULT_INSTANCE;
+    private static final fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult();
+      DEFAULT_INSTANCE = new fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult();
     }
 
-    public static fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult getDefaultInstance() {
+    public static fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9100,7 +9124,7 @@ public final class ContentProtoBuf {
     }
 
     @java.lang.Override
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult getDefaultInstanceForType() {
+    public fctreddit.impl.server.grpc.generated_java.ContentProtoBuf.VoteCountResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9171,7 +9195,7 @@ public final class ContentProtoBuf {
       getDescriptor() {
     return descriptor;
   }
-  private static final com.google.protobuf.Descriptors.FileDescriptor
+  private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
     java.lang.String[] descriptorData = {
@@ -9214,9 +9238,9 @@ public final class ContentProtoBuf {
       "ge\"\000\0226\n\022removeDownVotePost\022\017.ChangeVoteA" +
       "rgs\032\r.EmptyMessage\"\000\022.\n\ngetUpVotes\022\014.Get" +
       "PostArgs\032\020.VoteCountResult\"\000\0220\n\014getDownV" +
-      "otes\022\014.GetPostArgs\032\020.VoteCountResult\"\000B5" +
-      "\n\"fctreddit.impl.grpc.generated_javaB\017Co" +
-      "ntentProtoBufb\006proto3"
+      "otes\022\014.GetPostArgs\032\020.VoteCountResult\"\000B<" +
+      "\n)fctreddit.impl.server.grpc.generated_j" +
+      "avaB\017ContentProtoBufb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

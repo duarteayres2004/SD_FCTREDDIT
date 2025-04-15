@@ -1,4 +1,4 @@
-package fctreddit.impl.server.persistance;
+package fctreddit.impl.persistance;
 
 import java.io.File;
 import java.util.List;

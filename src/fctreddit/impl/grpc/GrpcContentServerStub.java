@@ -1,6 +1,6 @@
-package fctreddit.impl.server.grpc;
+package fctreddit.impl.grpc;
 
-import fctreddit.impl.server.grpc.generated_java.ContentGrpc;
+import fctreddit.impl.grpc.generated_java.ContentGrpc;
 import io.grpc.BindableService;
 import io.grpc.ServerServiceDefinition;
 

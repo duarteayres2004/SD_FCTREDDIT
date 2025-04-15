@@ -1,4 +1,4 @@
-package fctreddit.impl.server.java;
+package fctreddit.impl.java;
 
 import fctreddit.api.User;
 import fctreddit.api.java.Result;

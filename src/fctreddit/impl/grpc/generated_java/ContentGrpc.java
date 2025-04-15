@@ -15,29 +15,29 @@ public final class ContentGrpc {
   public static final java.lang.String SERVICE_NAME = "Content";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult> getCreatePostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.CreatePostArgs,
+      ContentProtoBuf.CreatePostResult> getCreatePostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "createPost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.class,
+      requestType = ContentProtoBuf.CreatePostArgs.class,
+      responseType = ContentProtoBuf.CreatePostResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult> getCreatePostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult> getCreatePostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.CreatePostArgs,
+      ContentProtoBuf.CreatePostResult> getCreatePostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.CreatePostArgs, ContentProtoBuf.CreatePostResult> getCreatePostMethod;
     if ((getCreatePostMethod = ContentGrpc.getCreatePostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getCreatePostMethod = ContentGrpc.getCreatePostMethod) == null) {
           ContentGrpc.getCreatePostMethod = getCreatePostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.CreatePostArgs, ContentProtoBuf.CreatePostResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "createPost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs.getDefaultInstance()))
+                  ContentProtoBuf.CreatePostArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult.getDefaultInstance()))
+                  ContentProtoBuf.CreatePostResult.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("createPost"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class ContentGrpc {
     return getCreatePostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getGetPostsMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.GetPostsArgs,
+      ContentProtoBuf.GetPostsResult> getGetPostsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getPosts",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.class,
+      requestType = ContentProtoBuf.GetPostsArgs.class,
+      responseType = ContentProtoBuf.GetPostsResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getGetPostsMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getGetPostsMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.GetPostsArgs,
+      ContentProtoBuf.GetPostsResult> getGetPostsMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.GetPostsArgs, ContentProtoBuf.GetPostsResult> getGetPostsMethod;
     if ((getGetPostsMethod = ContentGrpc.getGetPostsMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getGetPostsMethod = ContentGrpc.getGetPostsMethod) == null) {
           ContentGrpc.getGetPostsMethod = getGetPostsMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.GetPostsArgs, ContentProtoBuf.GetPostsResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getPosts"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs.getDefaultInstance()))
+                  ContentProtoBuf.GetPostsArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.getDefaultInstance()))
+                  ContentProtoBuf.GetPostsResult.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("getPosts"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class ContentGrpc {
     return getGetPostsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> getGetPostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs,
+      ContentProtoBuf.GrpcPost> getGetPostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getPost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.class,
+      requestType = ContentProtoBuf.GetPostArgs.class,
+      responseType = ContentProtoBuf.GrpcPost.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> getGetPostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> getGetPostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs,
+      ContentProtoBuf.GrpcPost> getGetPostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs, ContentProtoBuf.GrpcPost> getGetPostMethod;
     if ((getGetPostMethod = ContentGrpc.getGetPostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getGetPostMethod = ContentGrpc.getGetPostMethod) == null) {
           ContentGrpc.getGetPostMethod = getGetPostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.GetPostArgs, ContentProtoBuf.GrpcPost>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getPost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.getDefaultInstance()))
+                  ContentProtoBuf.GetPostArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance()))
+                  ContentProtoBuf.GrpcPost.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("getPost"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class ContentGrpc {
     return getGetPostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getGetPostAnswersMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.GetPostAnswersArgs,
+      ContentProtoBuf.GetPostsResult> getGetPostAnswersMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getPostAnswers",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.class,
+      requestType = ContentProtoBuf.GetPostAnswersArgs.class,
+      responseType = ContentProtoBuf.GetPostsResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getGetPostAnswersMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getGetPostAnswersMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.GetPostAnswersArgs,
+      ContentProtoBuf.GetPostsResult> getGetPostAnswersMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.GetPostAnswersArgs, ContentProtoBuf.GetPostsResult> getGetPostAnswersMethod;
     if ((getGetPostAnswersMethod = ContentGrpc.getGetPostAnswersMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getGetPostAnswersMethod = ContentGrpc.getGetPostAnswersMethod) == null) {
           ContentGrpc.getGetPostAnswersMethod = getGetPostAnswersMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.GetPostAnswersArgs, ContentProtoBuf.GetPostsResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getPostAnswers"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs.getDefaultInstance()))
+                  ContentProtoBuf.GetPostAnswersArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult.getDefaultInstance()))
+                  ContentProtoBuf.GetPostsResult.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("getPostAnswers"))
               .build();
         }
@@ -139,29 +139,29 @@ public final class ContentGrpc {
     return getGetPostAnswersMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> getUpdatePostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.UpdatePostArgs,
+      ContentProtoBuf.GrpcPost> getUpdatePostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "updatePost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.class,
+      requestType = ContentProtoBuf.UpdatePostArgs.class,
+      responseType = ContentProtoBuf.GrpcPost.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> getUpdatePostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> getUpdatePostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.UpdatePostArgs,
+      ContentProtoBuf.GrpcPost> getUpdatePostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.UpdatePostArgs, ContentProtoBuf.GrpcPost> getUpdatePostMethod;
     if ((getUpdatePostMethod = ContentGrpc.getUpdatePostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getUpdatePostMethod = ContentGrpc.getUpdatePostMethod) == null) {
           ContentGrpc.getUpdatePostMethod = getUpdatePostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.UpdatePostArgs, ContentProtoBuf.GrpcPost>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "updatePost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs.getDefaultInstance()))
+                  ContentProtoBuf.UpdatePostArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost.getDefaultInstance()))
+                  ContentProtoBuf.GrpcPost.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("updatePost"))
               .build();
         }
@@ -170,29 +170,29 @@ public final class ContentGrpc {
     return getUpdatePostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getDeletePostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.DeletePostArgs,
+      ContentProtoBuf.EmptyMessage> getDeletePostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "deletePost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.class,
+      requestType = ContentProtoBuf.DeletePostArgs.class,
+      responseType = ContentProtoBuf.EmptyMessage.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getDeletePostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getDeletePostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.DeletePostArgs,
+      ContentProtoBuf.EmptyMessage> getDeletePostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.DeletePostArgs, ContentProtoBuf.EmptyMessage> getDeletePostMethod;
     if ((getDeletePostMethod = ContentGrpc.getDeletePostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getDeletePostMethod = ContentGrpc.getDeletePostMethod) == null) {
           ContentGrpc.getDeletePostMethod = getDeletePostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.DeletePostArgs, ContentProtoBuf.EmptyMessage>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "deletePost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs.getDefaultInstance()))
+                  ContentProtoBuf.DeletePostArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance()))
+                  ContentProtoBuf.EmptyMessage.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("deletePost"))
               .build();
         }
@@ -201,29 +201,29 @@ public final class ContentGrpc {
     return getDeletePostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getUpVotePostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getUpVotePostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "upVotePost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.class,
+      requestType = ContentProtoBuf.ChangeVoteArgs.class,
+      responseType = ContentProtoBuf.EmptyMessage.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getUpVotePostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getUpVotePostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getUpVotePostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage> getUpVotePostMethod;
     if ((getUpVotePostMethod = ContentGrpc.getUpVotePostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getUpVotePostMethod = ContentGrpc.getUpVotePostMethod) == null) {
           ContentGrpc.getUpVotePostMethod = getUpVotePostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "upVotePost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
+                  ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance()))
+                  ContentProtoBuf.EmptyMessage.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("upVotePost"))
               .build();
         }
@@ -232,29 +232,29 @@ public final class ContentGrpc {
     return getUpVotePostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getRemoveUpVotePostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getRemoveUpVotePostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "removeUpVotePost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.class,
+      requestType = ContentProtoBuf.ChangeVoteArgs.class,
+      responseType = ContentProtoBuf.EmptyMessage.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getRemoveUpVotePostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getRemoveUpVotePostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getRemoveUpVotePostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage> getRemoveUpVotePostMethod;
     if ((getRemoveUpVotePostMethod = ContentGrpc.getRemoveUpVotePostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getRemoveUpVotePostMethod = ContentGrpc.getRemoveUpVotePostMethod) == null) {
           ContentGrpc.getRemoveUpVotePostMethod = getRemoveUpVotePostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "removeUpVotePost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
+                  ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance()))
+                  ContentProtoBuf.EmptyMessage.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("removeUpVotePost"))
               .build();
         }
@@ -263,29 +263,29 @@ public final class ContentGrpc {
     return getRemoveUpVotePostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getDownVotePostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getDownVotePostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "downVotePost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.class,
+      requestType = ContentProtoBuf.ChangeVoteArgs.class,
+      responseType = ContentProtoBuf.EmptyMessage.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getDownVotePostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getDownVotePostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getDownVotePostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage> getDownVotePostMethod;
     if ((getDownVotePostMethod = ContentGrpc.getDownVotePostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getDownVotePostMethod = ContentGrpc.getDownVotePostMethod) == null) {
           ContentGrpc.getDownVotePostMethod = getDownVotePostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "downVotePost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
+                  ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance()))
+                  ContentProtoBuf.EmptyMessage.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("downVotePost"))
               .build();
         }
@@ -294,29 +294,29 @@ public final class ContentGrpc {
     return getDownVotePostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getRemoveDownVotePostMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getRemoveDownVotePostMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "removeDownVotePost",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.class,
+      requestType = ContentProtoBuf.ChangeVoteArgs.class,
+      responseType = ContentProtoBuf.EmptyMessage.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getRemoveDownVotePostMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> getRemoveDownVotePostMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs,
+      ContentProtoBuf.EmptyMessage> getRemoveDownVotePostMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage> getRemoveDownVotePostMethod;
     if ((getRemoveDownVotePostMethod = ContentGrpc.getRemoveDownVotePostMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getRemoveDownVotePostMethod = ContentGrpc.getRemoveDownVotePostMethod) == null) {
           ContentGrpc.getRemoveDownVotePostMethod = getRemoveDownVotePostMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.ChangeVoteArgs, ContentProtoBuf.EmptyMessage>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "removeDownVotePost"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
+                  ContentProtoBuf.ChangeVoteArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage.getDefaultInstance()))
+                  ContentProtoBuf.EmptyMessage.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("removeDownVotePost"))
               .build();
         }
@@ -325,29 +325,29 @@ public final class ContentGrpc {
     return getRemoveDownVotePostMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getGetUpVotesMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs,
+      ContentProtoBuf.VoteCountResult> getGetUpVotesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getUpVotes",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.class,
+      requestType = ContentProtoBuf.GetPostArgs.class,
+      responseType = ContentProtoBuf.VoteCountResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getGetUpVotesMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getGetUpVotesMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs,
+      ContentProtoBuf.VoteCountResult> getGetUpVotesMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs, ContentProtoBuf.VoteCountResult> getGetUpVotesMethod;
     if ((getGetUpVotesMethod = ContentGrpc.getGetUpVotesMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getGetUpVotesMethod = ContentGrpc.getGetUpVotesMethod) == null) {
           ContentGrpc.getGetUpVotesMethod = getGetUpVotesMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.GetPostArgs, ContentProtoBuf.VoteCountResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getUpVotes"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.getDefaultInstance()))
+                  ContentProtoBuf.GetPostArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.getDefaultInstance()))
+                  ContentProtoBuf.VoteCountResult.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("getUpVotes"))
               .build();
         }
@@ -356,29 +356,29 @@ public final class ContentGrpc {
     return getGetUpVotesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getGetDownVotesMethod;
+  private static volatile io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs,
+      ContentProtoBuf.VoteCountResult> getGetDownVotesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getDownVotes",
-      requestType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.class,
+      requestType = ContentProtoBuf.GetPostArgs.class,
+      responseType = ContentProtoBuf.VoteCountResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-      fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getGetDownVotesMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getGetDownVotesMethod;
+  public static io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs,
+      ContentProtoBuf.VoteCountResult> getGetDownVotesMethod() {
+    io.grpc.MethodDescriptor<ContentProtoBuf.GetPostArgs, ContentProtoBuf.VoteCountResult> getGetDownVotesMethod;
     if ((getGetDownVotesMethod = ContentGrpc.getGetDownVotesMethod) == null) {
       synchronized (ContentGrpc.class) {
         if ((getGetDownVotesMethod = ContentGrpc.getGetDownVotesMethod) == null) {
           ContentGrpc.getGetDownVotesMethod = getGetDownVotesMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs, fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult>newBuilder()
+              io.grpc.MethodDescriptor.<ContentProtoBuf.GetPostArgs, ContentProtoBuf.VoteCountResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getDownVotes"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs.getDefaultInstance()))
+                  ContentProtoBuf.GetPostArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult.getDefaultInstance()))
+                  ContentProtoBuf.VoteCountResult.getDefaultInstance()))
               .setSchemaDescriptor(new ContentMethodDescriptorSupplier("getDownVotes"))
               .build();
         }
@@ -437,85 +437,85 @@ public final class ContentGrpc {
 
     /**
      */
-    default void createPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult> responseObserver) {
+    default void createPost(ContentProtoBuf.CreatePostArgs request,
+                            io.grpc.stub.StreamObserver<ContentProtoBuf.CreatePostResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreatePostMethod(), responseObserver);
     }
 
     /**
      */
-    default void getPosts(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> responseObserver) {
+    default void getPosts(ContentProtoBuf.GetPostsArgs request,
+                          io.grpc.stub.StreamObserver<ContentProtoBuf.GetPostsResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetPostsMethod(), responseObserver);
     }
 
     /**
      */
-    default void getPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> responseObserver) {
+    default void getPost(ContentProtoBuf.GetPostArgs request,
+                         io.grpc.stub.StreamObserver<ContentProtoBuf.GrpcPost> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetPostMethod(), responseObserver);
     }
 
     /**
      */
-    default void getPostAnswers(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> responseObserver) {
+    default void getPostAnswers(ContentProtoBuf.GetPostAnswersArgs request,
+                                io.grpc.stub.StreamObserver<ContentProtoBuf.GetPostsResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetPostAnswersMethod(), responseObserver);
     }
 
     /**
      */
-    default void updatePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> responseObserver) {
+    default void updatePost(ContentProtoBuf.UpdatePostArgs request,
+                            io.grpc.stub.StreamObserver<ContentProtoBuf.GrpcPost> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdatePostMethod(), responseObserver);
     }
 
     /**
      */
-    default void deletePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    default void deletePost(ContentProtoBuf.DeletePostArgs request,
+                            io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeletePostMethod(), responseObserver);
     }
 
     /**
      */
-    default void upVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    default void upVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                            io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpVotePostMethod(), responseObserver);
     }
 
     /**
      */
-    default void removeUpVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    default void removeUpVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                                  io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRemoveUpVotePostMethod(), responseObserver);
     }
 
     /**
      */
-    default void downVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    default void downVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                              io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDownVotePostMethod(), responseObserver);
     }
 
     /**
      */
-    default void removeDownVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    default void removeDownVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                                    io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRemoveDownVotePostMethod(), responseObserver);
     }
 
     /**
      */
-    default void getUpVotes(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> responseObserver) {
+    default void getUpVotes(ContentProtoBuf.GetPostArgs request,
+                            io.grpc.stub.StreamObserver<ContentProtoBuf.VoteCountResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetUpVotesMethod(), responseObserver);
     }
 
     /**
      */
-    default void getDownVotes(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> responseObserver) {
+    default void getDownVotes(ContentProtoBuf.GetPostArgs request,
+                              io.grpc.stub.StreamObserver<ContentProtoBuf.VoteCountResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetDownVotesMethod(), responseObserver);
     }
   }
@@ -549,96 +549,96 @@ public final class ContentGrpc {
 
     /**
      */
-    public void createPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult> responseObserver) {
+    public void createPost(ContentProtoBuf.CreatePostArgs request,
+                           io.grpc.stub.StreamObserver<ContentProtoBuf.CreatePostResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreatePostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getPosts(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> responseObserver) {
+    public void getPosts(ContentProtoBuf.GetPostsArgs request,
+                         io.grpc.stub.StreamObserver<ContentProtoBuf.GetPostsResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetPostsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> responseObserver) {
+    public void getPost(ContentProtoBuf.GetPostArgs request,
+                        io.grpc.stub.StreamObserver<ContentProtoBuf.GrpcPost> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetPostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getPostAnswers(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> responseObserver) {
+    public void getPostAnswers(ContentProtoBuf.GetPostAnswersArgs request,
+                               io.grpc.stub.StreamObserver<ContentProtoBuf.GetPostsResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetPostAnswersMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void updatePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> responseObserver) {
+    public void updatePost(ContentProtoBuf.UpdatePostArgs request,
+                           io.grpc.stub.StreamObserver<ContentProtoBuf.GrpcPost> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdatePostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void deletePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    public void deletePost(ContentProtoBuf.DeletePostArgs request,
+                           io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeletePostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void upVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    public void upVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                           io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpVotePostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void removeUpVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    public void removeUpVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                                 io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRemoveUpVotePostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void downVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    public void downVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                             io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDownVotePostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void removeDownVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> responseObserver) {
+    public void removeDownVotePost(ContentProtoBuf.ChangeVoteArgs request,
+                                   io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRemoveDownVotePostMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getUpVotes(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> responseObserver) {
+    public void getUpVotes(ContentProtoBuf.GetPostArgs request,
+                           io.grpc.stub.StreamObserver<ContentProtoBuf.VoteCountResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetUpVotesMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getDownVotes(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> responseObserver) {
+    public void getDownVotes(ContentProtoBuf.GetPostArgs request,
+                             io.grpc.stub.StreamObserver<ContentProtoBuf.VoteCountResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetDownVotesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -662,84 +662,84 @@ public final class ContentGrpc {
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult createPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs request) {
+    public ContentProtoBuf.CreatePostResult createPost(ContentProtoBuf.CreatePostArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreatePostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult getPosts(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs request) {
+    public ContentProtoBuf.GetPostsResult getPosts(ContentProtoBuf.GetPostsArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetPostsMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost getPost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request) {
+    public ContentProtoBuf.GrpcPost getPost(ContentProtoBuf.GetPostArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetPostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult getPostAnswers(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs request) {
+    public ContentProtoBuf.GetPostsResult getPostAnswers(ContentProtoBuf.GetPostAnswersArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetPostAnswersMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost updatePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs request) {
+    public ContentProtoBuf.GrpcPost updatePost(ContentProtoBuf.UpdatePostArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdatePostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage deletePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs request) {
+    public ContentProtoBuf.EmptyMessage deletePost(ContentProtoBuf.DeletePostArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDeletePostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage upVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public ContentProtoBuf.EmptyMessage upVotePost(ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpVotePostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage removeUpVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public ContentProtoBuf.EmptyMessage removeUpVotePost(ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRemoveUpVotePostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage downVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public ContentProtoBuf.EmptyMessage downVotePost(ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDownVotePostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage removeDownVotePost(fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public ContentProtoBuf.EmptyMessage removeDownVotePost(ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRemoveDownVotePostMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult getUpVotes(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request) {
+    public ContentProtoBuf.VoteCountResult getUpVotes(ContentProtoBuf.GetPostArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetUpVotesMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult getDownVotes(fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request) {
+    public ContentProtoBuf.VoteCountResult getDownVotes(ContentProtoBuf.GetPostArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetDownVotesMethod(), getCallOptions(), request);
     }
@@ -763,96 +763,96 @@ public final class ContentGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult> createPost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.CreatePostResult> createPost(
+        ContentProtoBuf.CreatePostArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreatePostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getPosts(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.GetPostsResult> getPosts(
+        ContentProtoBuf.GetPostsArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetPostsMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> getPost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.GrpcPost> getPost(
+        ContentProtoBuf.GetPostArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetPostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult> getPostAnswers(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.GetPostsResult> getPostAnswers(
+        ContentProtoBuf.GetPostAnswersArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetPostAnswersMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost> updatePost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.GrpcPost> updatePost(
+        ContentProtoBuf.UpdatePostArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdatePostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> deletePost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.EmptyMessage> deletePost(
+        ContentProtoBuf.DeletePostArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDeletePostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> upVotePost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.EmptyMessage> upVotePost(
+        ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpVotePostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> removeUpVotePost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.EmptyMessage> removeUpVotePost(
+        ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRemoveUpVotePostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> downVotePost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.EmptyMessage> downVotePost(
+        ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDownVotePostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage> removeDownVotePost(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.EmptyMessage> removeDownVotePost(
+        ContentProtoBuf.ChangeVoteArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRemoveDownVotePostMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getUpVotes(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.VoteCountResult> getUpVotes(
+        ContentProtoBuf.GetPostArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetUpVotesMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult> getDownVotes(
-        fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<ContentProtoBuf.VoteCountResult> getDownVotes(
+        ContentProtoBuf.GetPostArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetDownVotesMethod(), getCallOptions()), request);
     }
@@ -889,52 +889,52 @@ public final class ContentGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_POST:
-          serviceImpl.createPost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult>) responseObserver);
+          serviceImpl.createPost((ContentProtoBuf.CreatePostArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.CreatePostResult>) responseObserver);
           break;
         case METHODID_GET_POSTS:
-          serviceImpl.getPosts((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult>) responseObserver);
+          serviceImpl.getPosts((ContentProtoBuf.GetPostsArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.GetPostsResult>) responseObserver);
           break;
         case METHODID_GET_POST:
-          serviceImpl.getPost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost>) responseObserver);
+          serviceImpl.getPost((ContentProtoBuf.GetPostArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.GrpcPost>) responseObserver);
           break;
         case METHODID_GET_POST_ANSWERS:
-          serviceImpl.getPostAnswers((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult>) responseObserver);
+          serviceImpl.getPostAnswers((ContentProtoBuf.GetPostAnswersArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.GetPostsResult>) responseObserver);
           break;
         case METHODID_UPDATE_POST:
-          serviceImpl.updatePost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost>) responseObserver);
+          serviceImpl.updatePost((ContentProtoBuf.UpdatePostArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.GrpcPost>) responseObserver);
           break;
         case METHODID_DELETE_POST:
-          serviceImpl.deletePost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>) responseObserver);
+          serviceImpl.deletePost((ContentProtoBuf.DeletePostArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage>) responseObserver);
           break;
         case METHODID_UP_VOTE_POST:
-          serviceImpl.upVotePost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>) responseObserver);
+          serviceImpl.upVotePost((ContentProtoBuf.ChangeVoteArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage>) responseObserver);
           break;
         case METHODID_REMOVE_UP_VOTE_POST:
-          serviceImpl.removeUpVotePost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>) responseObserver);
+          serviceImpl.removeUpVotePost((ContentProtoBuf.ChangeVoteArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage>) responseObserver);
           break;
         case METHODID_DOWN_VOTE_POST:
-          serviceImpl.downVotePost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>) responseObserver);
+          serviceImpl.downVotePost((ContentProtoBuf.ChangeVoteArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage>) responseObserver);
           break;
         case METHODID_REMOVE_DOWN_VOTE_POST:
-          serviceImpl.removeDownVotePost((fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>) responseObserver);
+          serviceImpl.removeDownVotePost((ContentProtoBuf.ChangeVoteArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.EmptyMessage>) responseObserver);
           break;
         case METHODID_GET_UP_VOTES:
-          serviceImpl.getUpVotes((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult>) responseObserver);
+          serviceImpl.getUpVotes((ContentProtoBuf.GetPostArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.VoteCountResult>) responseObserver);
           break;
         case METHODID_GET_DOWN_VOTES:
-          serviceImpl.getDownVotes((fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult>) responseObserver);
+          serviceImpl.getDownVotes((ContentProtoBuf.GetPostArgs) request,
+              (io.grpc.stub.StreamObserver<ContentProtoBuf.VoteCountResult>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -958,85 +958,85 @@ public final class ContentGrpc {
           getCreatePostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.CreatePostResult>(
+              ContentProtoBuf.CreatePostArgs,
+              ContentProtoBuf.CreatePostResult>(
                 service, METHODID_CREATE_POST)))
         .addMethod(
           getGetPostsMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult>(
+              ContentProtoBuf.GetPostsArgs,
+              ContentProtoBuf.GetPostsResult>(
                 service, METHODID_GET_POSTS)))
         .addMethod(
           getGetPostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost>(
+              ContentProtoBuf.GetPostArgs,
+              ContentProtoBuf.GrpcPost>(
                 service, METHODID_GET_POST)))
         .addMethod(
           getGetPostAnswersMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostAnswersArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostsResult>(
+              ContentProtoBuf.GetPostAnswersArgs,
+              ContentProtoBuf.GetPostsResult>(
                 service, METHODID_GET_POST_ANSWERS)))
         .addMethod(
           getUpdatePostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.UpdatePostArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GrpcPost>(
+              ContentProtoBuf.UpdatePostArgs,
+              ContentProtoBuf.GrpcPost>(
                 service, METHODID_UPDATE_POST)))
         .addMethod(
           getDeletePostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.DeletePostArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>(
+              ContentProtoBuf.DeletePostArgs,
+              ContentProtoBuf.EmptyMessage>(
                 service, METHODID_DELETE_POST)))
         .addMethod(
           getUpVotePostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>(
+              ContentProtoBuf.ChangeVoteArgs,
+              ContentProtoBuf.EmptyMessage>(
                 service, METHODID_UP_VOTE_POST)))
         .addMethod(
           getRemoveUpVotePostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>(
+              ContentProtoBuf.ChangeVoteArgs,
+              ContentProtoBuf.EmptyMessage>(
                 service, METHODID_REMOVE_UP_VOTE_POST)))
         .addMethod(
           getDownVotePostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>(
+              ContentProtoBuf.ChangeVoteArgs,
+              ContentProtoBuf.EmptyMessage>(
                 service, METHODID_DOWN_VOTE_POST)))
         .addMethod(
           getRemoveDownVotePostMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.ChangeVoteArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.EmptyMessage>(
+              ContentProtoBuf.ChangeVoteArgs,
+              ContentProtoBuf.EmptyMessage>(
                 service, METHODID_REMOVE_DOWN_VOTE_POST)))
         .addMethod(
           getGetUpVotesMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult>(
+              ContentProtoBuf.GetPostArgs,
+              ContentProtoBuf.VoteCountResult>(
                 service, METHODID_GET_UP_VOTES)))
         .addMethod(
           getGetDownVotesMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.GetPostArgs,
-              fctreddit.impl.grpc.generated_java.ContentProtoBuf.VoteCountResult>(
+              ContentProtoBuf.GetPostArgs,
+              ContentProtoBuf.VoteCountResult>(
                 service, METHODID_GET_DOWN_VOTES)))
         .build();
   }
@@ -1047,7 +1047,7 @@ public final class ContentGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ContentProtoBuf.getDescriptor();
+      return ContentProtoBuf.getDescriptor();
     }
 
     @java.lang.Override

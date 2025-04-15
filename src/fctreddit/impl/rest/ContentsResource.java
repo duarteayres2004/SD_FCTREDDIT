@@ -1,4 +1,4 @@
-package fctreddit.impl.server.rest;
+package fctreddit.impl.rest;
 
 import fctreddit.api.Post;
 import fctreddit.api.java.Content;
