@@ -25,14 +25,12 @@ public class JavaUsers implements Users {
 	@Override
 	public Result<String> createUser(User user) {
 		Log.info("createUser : " + user);
-
 		// Check if user data is valid
 		if (!this.isValidField(user.getUserId()) || !this.isValidField(user.getPassword()) || !this.isValidField(user.getFullName())
 				|| !this.isValidField(user.getEmail()) ) {
 			Log.info("User object invalid.");
 			return Result.error(ErrorCode.BAD_REQUEST);
 		}
-
 
 		//Iniciar uma transação para poder verificar os restantes erros
 		try {
@@ -84,7 +82,6 @@ public class JavaUsers implements Users {
 
 		try {
 			if (user.getFullName() != null) {
-
 				existingUser.setFullName(user.getFullName());
 			}
 			if (user.getEmail() != null) {
