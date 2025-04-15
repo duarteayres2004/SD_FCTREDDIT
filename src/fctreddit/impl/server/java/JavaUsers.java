@@ -51,12 +51,6 @@ public class JavaUsers implements Users {
 	public Result<User> getUser(String userId, String password) {
 		Log.info("getUser : user = " + userId + "; pwd = " + password);
 
-		// Check if user is valid
-		if (userId == null || password == null) {
-			Log.info("UserId or password null.");
-			return Result.error(ErrorCode.BAD_REQUEST);
-		}
-
 		User user = null;
 		try {
 			user = hibernate.get(User.class, userId);
