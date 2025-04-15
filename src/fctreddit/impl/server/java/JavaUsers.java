@@ -27,8 +27,8 @@ public class JavaUsers implements Users {
 		Log.info("createUser : " + user);
 
 		// Check if user data is valid
-		if (user.getUserId() == null || user.getPassword() == null || user.getFullName() == null
-				|| user.getEmail() == null) {
+		if (!this.isValidField(user.getUserId()) || !this.isValidField(user.getPassword()) || !this.isValidField(user.getFullName())
+				|| !this.isValidField(user.getEmail()) ) {
 			Log.info("User object invalid.");
 			return Result.error(ErrorCode.BAD_REQUEST);
 		}
@@ -107,6 +107,7 @@ public class JavaUsers implements Users {
 		return Result.ok(existingUser);
 	}
 
+	//Quando user é deleted é preciso fazer delete do seu avatar e dos contents
 	@Override
 	public Result<User> deleteUser(String userId, String password) {
 		Log.info("deleteUser : user = " + userId + "; pwd = " + password);
@@ -135,6 +136,8 @@ public class JavaUsers implements Users {
 		}
 	}
 	
-
+	private boolean isValidField(String field) {
+		return field != null && !field.isBlank();
+	}
 
 }
