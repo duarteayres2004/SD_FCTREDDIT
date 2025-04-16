@@ -9,16 +9,21 @@ import fctreddit.impl.java.JavaImages;
 import io.grpc.BindableService;
 import io.grpc.ServerServiceDefinition;
 import io.grpc.stub.StreamObserver;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.UriInfo;
 
 public class GrpcImageServerStub implements ImageGrpc.AsyncService, BindableService {
 
-    Image impl = new JavaImages();
+   UriInfo u;
+    String URI = u.getAbsolutePath().toString()+"image/";
+    Image impl = new JavaImages(URI);
 
     @Override
     public ServerServiceDefinition bindService() {
         return ImageGrpc.bindService(this);
     }
     //Isto está mal para já
+    /**
     @Override
     public void createImage(ImageProtoBuf.CreateImageArgs request, StreamObserver<ImageProtoBuf.CreateImageResult> responseObserver) {
         Result<String> res = impl.createImage( DataModelAdaptor.GrpcUser_to_User(request.getUser()));
@@ -28,6 +33,7 @@ public class GrpcImageServerStub implements ImageGrpc.AsyncService, BindableServ
             responseObserver.onNext( ImageProtoBuf.CreateImageResult.newBuilder().setUserId( res.value() ).build());
         }
     }
+     **/
 
     @Override
     public void getImage(ImageProtoBuf.GetImageArgs request, StreamObserver<ImageProtoBuf.GetImageResult> responseObserver) {

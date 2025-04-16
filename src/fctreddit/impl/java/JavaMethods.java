@@ -9,13 +9,15 @@ import java.net.URI;
 /**
  * Classe para metermos todos os metodos que usamos em todas as classes
  */
-abstract class JavaMethods {
+public abstract class JavaMethods {
 
 
     protected URI tryDiscovery(String serviceName, Discovery discovery){
-        URI[] Uris = discovery.knownUrisOf(serviceName,1);
-        URI Uri = Uris[0];
-        return Uri;
+        URI[] uris = discovery.knownUrisOf(serviceName, 1);
+        if (uris == null || uris.length == 0) {
+            return null;
+        }
+        return uris[0];
     }
 
 

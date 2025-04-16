@@ -4004,8 +4004,8 @@ public final class ImageProtoBuf {
       "s\032\022.CreateImageResult\"\000\022.\n\010getImage\022\r.Ge" +
       "tImageArgs\032\017.GetImageResult\"\0000\001\0225\n\013delet" +
       "eImage\022\020.DeleteImageArgs\032\022.DeleteImageRe" +
-      "sult\"\000B:\n)fctreddit.impl.grpc.gen" +
-      "erated_javaB\rImageProtoBufb\006proto3"
+      "sult\"\000B3\n\"fctreddit.impl.grpc.generated_" +
+      "javaB\rImageProtoBufb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

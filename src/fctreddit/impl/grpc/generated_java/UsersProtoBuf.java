@@ -7482,9 +7482,8 @@ public final class UsersProtoBuf {
       "\017.UpdateUserArgs\032\021.UpdateUserResult\"\000\0222\n" +
       "\ndeleteUser\022\017.DeleteUserArgs\032\021.DeleteUse" +
       "rResult\"\000\022-\n\013searchUsers\022\017.SearchUserArg" +
-      "s\032\t.GrpcUser\"\0000\001B:\n)fctreddit.impl.serve" +
-      "r.grpc.generated_javaB\rUsersProtoBufb\006pr" +
-      "oto3"
+      "s\032\t.GrpcUser\"\0000\001B3\n\"fctreddit.impl.grpc." +
+      "generated_javaB\rUsersProtoBufb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

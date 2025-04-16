@@ -19,7 +19,7 @@ public class ImagesResource implements RestImage {
     public String URI;
 
     public ImagesResource(@Context UriInfo UriInfo) {
-        URI = UriInfo.getAbsolutePath().toString()+"/image";
+        URI = UriInfo.getAbsolutePath().toString()+"image/";
         impl = new JavaImages(URI);
     }
 

@@ -17,9 +17,9 @@ import java.net.URI;
 import java.util.*;
 import java.util.logging.Logger;
 
-public class JavaContents implements Content {
+public class JavaContents  implements Content {
 
-    private static final Logger Log = Logger.getLogger(JavaUsers.class.getName());
+    private static final Logger Log = Logger.getLogger(JavaContents.class.getName());
 
     private final Hibernate hibernate;
 

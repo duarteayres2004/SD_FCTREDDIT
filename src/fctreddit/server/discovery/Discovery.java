@@ -165,21 +165,31 @@ public class Discovery {
 
         synchronized (services) {
             serviceUris = services.get(serviceName);
-        }
 
-        while (serviceUris.size() < minReplies) {
+            if (serviceUris == null) {
+                serviceUris = new ArrayList<>();
+                services.put(serviceName, serviceUris);
+            }
+        }
+            while (serviceUris.size() < minReplies) {
+                try {
+                    wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    return new URI[0];
+                }
+            }
+
+        List<URI> uriList = new ArrayList<>();
+        for (String s : serviceUris) {
             try {
-                wait();
-            } catch (InterruptedException e) {
+                uriList.add(URI.create(s));
+            } catch (Exception e) {
                 e.printStackTrace();
-                return new URI[0];
             }
         }
 
-        URI[] uris = new URI[serviceUris.size()];
-
-        serviceUris.toArray(uris);
-        return uris;
+        return uriList.toArray(new URI[0]);
     }
 
     // Main just for testing purposes
