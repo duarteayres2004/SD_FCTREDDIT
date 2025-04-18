@@ -8,6 +8,9 @@ import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.UriInfo;
 
+import java.net.InetAddress;
+import java.net.URI;
+import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
@@ -18,8 +21,11 @@ public class ImagesResource implements RestImage {
     final Image impl;
     public String URI;
 
+
+
     public ImagesResource(@Context UriInfo UriInfo) {
-        URI = UriInfo.getAbsolutePath().toString()+"image/";
+
+        URI = UriInfo.getBaseUri().toString()+"image/";
         impl = new JavaImages(URI);
     }
 
@@ -31,6 +37,7 @@ public class ImagesResource implements RestImage {
         if (!res.isOK()) {
             throw new WebApplicationException(errorCodeToStatus(res.error()));
         }
+
         return res.value();
     }
 

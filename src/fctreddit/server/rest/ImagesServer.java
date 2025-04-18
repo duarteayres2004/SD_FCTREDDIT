@@ -4,6 +4,7 @@ import java.net.InetAddress;
 import java.net.URI;
 import java.util.logging.Logger;
 
+import jakarta.ws.rs.core.UriInfo;
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
@@ -26,10 +27,12 @@ public class ImagesServer {
     public static void main(String[] args) {
         try {
             ResourceConfig config = new ResourceConfig();
-            config.register(ImagesResource.class);
+
 
             String ip = InetAddress.getLocalHost().getHostAddress();
             String serverURI = String.format(SERVER_URI_FMT, ip, PORT);
+
+            config.register(ImagesResource.class);
 
             Discovery discovery = new Discovery(Discovery.DISCOVERY_ADDR, "Image", serverURI);
             discovery.start();

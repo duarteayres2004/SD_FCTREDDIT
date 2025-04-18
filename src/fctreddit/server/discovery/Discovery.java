@@ -164,12 +164,8 @@ public class Discovery {
         List<String> serviceUris;
 
         synchronized (services) {
-            serviceUris = services.get(serviceName);
+            serviceUris = services.computeIfAbsent(serviceName, k -> new ArrayList<>());
 
-            if (serviceUris == null) {
-                serviceUris = new ArrayList<>();
-                services.put(serviceName, serviceUris);
-            }
         }
             while (serviceUris.size() < minReplies) {
                 try {

@@ -3,25 +3,13 @@ package fctreddit.impl.java;
 import fctreddit.api.User;
 import fctreddit.api.java.Image;
 import fctreddit.api.java.Result;
-import fctreddit.api.java.Users;
 import fctreddit.clients.grpc.GrpcUsersClient;
 import fctreddit.clients.java.UsersClient;
 import fctreddit.clients.rest.RestUsersClient;
-
-import fctreddit.impl.java.JavaMethods;
 import fctreddit.server.discovery.Discovery;
-import jakarta.ws.rs.client.WebTarget;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
-import org.glassfish.jersey.client.ClientConfig;
-import jakarta.ws.rs.client.ClientBuilder;
-import jakarta.ws.rs.client.Client;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.UUID;
@@ -36,8 +24,8 @@ public class JavaImages extends JavaMethods implements Image {
     private String imgPath;
 
 
-    public JavaImages(String URI) {
-        this.imgPath = URI;
+    public JavaImages(String path) {
+        this.imgPath = path;
 
         try {
             discovery = new Discovery(Discovery.DISCOVERY_ADDR);
@@ -54,6 +42,7 @@ public class JavaImages extends JavaMethods implements Image {
         }
     }
 
+
     @Override
     public Result<String> createImage(String userId, byte[] imageContents, String password) {
         Log.info("create Image for user: " + userId);
@@ -69,11 +58,10 @@ public class JavaImages extends JavaMethods implements Image {
             }
 
         } catch (Exception e) {
-            Log.info("surprise!");
             e.printStackTrace();
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
-        Path path = Path.of(imgPath,userId, imageID+ ".png");
+        Path path = Path.of(userId, imageID+ ".png");
         try {
             Files.createDirectories(path.getParent());
             Files.write(path, imageContents);
@@ -82,7 +70,7 @@ public class JavaImages extends JavaMethods implements Image {
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
         Log.info("Image successfully written to: " + path.toAbsolutePath());
-        return Result.ok(imgPath + "/" + userId + "/" + imageID + ".png");
+        return Result.ok(imgPath + path);
 
     }
 
@@ -90,7 +78,7 @@ public class JavaImages extends JavaMethods implements Image {
     public Result<byte[]> getImage(String userId, String imageId) {
         Log.info("Fetching image for " + userId);
 
-        Path path = Path.of(imgPath, userId, imageId +".png");
+        Path path = Path.of(userId, imageId);
         File file = new File(String.valueOf(path));
         if (!file.exists()) {
             Log.info("No image found.");
@@ -120,7 +108,7 @@ public class JavaImages extends JavaMethods implements Image {
             e.printStackTrace();
             return Result.error(Result.ErrorCode.INTERNAL_ERROR);
         }
-        Path path = Path.of(userId, imageId + ".png");
+        Path path = Path.of(userId, imageId+ ".png");
         File file = new File(String.valueOf(path));
         if (!file.exists()) {
             Log.info("No image found.");
