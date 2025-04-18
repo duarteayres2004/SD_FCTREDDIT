@@ -36,7 +36,7 @@ public class JavaImages extends JavaMethods implements Image {
                 //return Result.error(Result.ErrorCode.NOT_FOUND);
             }
 
-            this.usersClient = usersUri.toString().endsWith("rest") ? new RestUsersClient(usersUri) : new GrpcUsersClient();
+            this.usersClient = usersUri.toString().endsWith("rest") ? new RestUsersClient(usersUri) : new GrpcUsersClient(usersUri);
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize Discovery", e);
         }

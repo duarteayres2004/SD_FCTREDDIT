@@ -4,13 +4,11 @@ import fctreddit.api.Post;
 import fctreddit.api.User;
 import fctreddit.api.java.Content;
 import fctreddit.api.java.Result;
-import fctreddit.api.java.Users;
 import fctreddit.clients.grpc.GrpcUsersClient;
 import fctreddit.clients.java.UsersClient;
 import fctreddit.clients.rest.RestUsersClient;
 import fctreddit.impl.persistance.Hibernate;
 import fctreddit.server.discovery.Discovery;
-import jakarta.ws.rs.core.UriInfo;
 
 import java.net.URI;
 
@@ -48,7 +46,7 @@ public class JavaContents  implements Content {
                 //return Result.error(Result.ErrorCode.NOT_FOUND);
             }
 
-            this.uClient = usersUri.toString().endsWith("rest") ? new RestUsersClient(usersUri) : new GrpcUsersClient();
+            this.uClient = usersUri.toString().endsWith("rest") ? new RestUsersClient(usersUri) : new GrpcUsersClient(usersUri);
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize Discovery", e);
         }

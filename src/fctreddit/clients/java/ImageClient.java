@@ -8,6 +8,13 @@ import jakarta.ws.rs.client.Client;
 public abstract class ImageClient implements Image {
 
 
+    protected static final int READ_TIMEOUT = 5000;
+    protected static final int CONNECT_TIMEOUT = 5000;
+
+    protected static final int MAX_RETRIES = 10;
+    protected static final int RETRY_SLEEP = 5000;
+
+
     abstract public Result<String> createImage(String userId, byte[] imageContents, String password);
 
     abstract public Result<byte[]> getImage(String userId, String imageId);

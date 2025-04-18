@@ -3,10 +3,17 @@ package fctreddit.clients.grpc;
 import fctreddit.api.Post;
 import fctreddit.api.java.Result;
 import fctreddit.clients.java.ContentClient;
+import io.grpc.LoadBalancerRegistry;
+import io.grpc.internal.PickFirstLoadBalancerProvider;
 
 import java.util.List;
 
 public class GrpcContentClient extends ContentClient {
+
+    static {
+        LoadBalancerRegistry.getDefaultRegistry().register(new PickFirstLoadBalancerProvider());
+    }
+
     @Override
     public Result<String> createPost(Post post, String password) {
         return null;
